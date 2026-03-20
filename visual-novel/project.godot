@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Visual novel"
+config/name="visual-novel"
+run/main_scene="uid://b7arq43ejhy33"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"

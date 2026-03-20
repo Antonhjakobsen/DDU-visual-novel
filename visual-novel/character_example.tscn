@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://m35kvadloyty"]
+
+[ext_resource type="Texture2D" uid="uid://cxsf0cy1slhc6" path="res://sprites/Test character.png" id="1_jqnm4"]
+[ext_resource type="Script" uid="uid://d4el5njrjlkyb" path="res://character_example.gd" id="2_jqnm4"]
+
+[node name="character_example" type="TextureRect"]
+offset_top = 2.0
+offset_right = 471.0
+offset_bottom = 5654.0
+texture = ExtResource("1_jqnm4")
+expand_mode = 5
+stretch_mode = 4
+script = ExtResource("2_jqnm4")
+default_sprite = ExtResource("1_jqnm4")
