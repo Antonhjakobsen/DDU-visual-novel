@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dr7po7w2pws6p"]
 
-[ext_resource type="Script" uid="uid://oxaolyk3hnyj" path="res://dialogue_box.gd" id="1_hwgul"]
+[ext_resource type="Script" uid="uid://oxaolyk3hnyj" path="res://dialog_box.gd" id="1_hwgul"]
 
 [node name="Panel" type="Panel"]
 anchors_preset = -1

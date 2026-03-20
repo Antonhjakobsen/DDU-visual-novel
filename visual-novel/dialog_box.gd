@@ -34,14 +34,15 @@ func _ready() -> void:
 	reset_text()
 
 func reset_text():
-	%Dialogbox.text=dialog
-	%Dialogbox.visible_ratio=0
 	if ! is_node_ready():
 		return
+	%Dialogbox.text=dialog
+	%Dialogbox.visible_ratio=0
 	if tween:
 		tween.shop()
 	tween = get_tree().create_tween()
-	tween.tween_property(%Dialogbox, "visible_ratio", 1, dialog.length()/30 +0.5).set_trans(Tween.TRANS_LINEAR)
+	@warning_ignore("integer_division")
+	tween.tween_property(%Dialogbox, "visible_ratio", 1, (dialog.length()/30) +0.5).set_trans(Tween.TRANS_LINEAR)
 	await tween.finished
 	tween=null
 	#self_destruct() ???? måske
