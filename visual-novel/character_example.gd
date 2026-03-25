@@ -3,7 +3,6 @@ class_name VNCharacter extends TextureRect
 @export var dialog_box: PackedScene
 @export var default_sprite:Texture2D
 @export var tagged_sprite: Dictionary[String,Texture2D]
-
 signal garbage_error
 
 # Called when the node enters the scene tree for the first time.
@@ -24,11 +23,13 @@ func move(targ:Node, seconds:float=1, trans:Tween.TransitionType=Tween.TRANS_QUA
 	return tween.finished
 
 @warning_ignore("unused_parameter")
-func say(text:String, tag:String="")->Signal:
+func say(text: String, tag: String = "") -> Signal:
 	if dialog_box == null:
-		print("Unknown dialog box config: " + str(dialog_box))
+		print("unknown dialog box configuration: " + str(dialog_box))
+		garbage_error.emit()
 		return garbage_error
-	var d:DialogBox=dialog_box.instantiate()
-	d.dialog=text
-	get_tree().root.add_child(d)
+
+	var d: DialogBox = dialog_box.instantiate()
+	d.dialog = text
+	get_tree().current_scene.add_child(d)
 	return d.complete

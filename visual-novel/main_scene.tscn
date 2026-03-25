@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7arq43ejhy33"]
+[gd_scene format=3 uid="uid://b7arq43ejhy33"]
 
 [ext_resource type="Script" uid="uid://dqqfj2g64o3x7" path="res://main_scene.gd" id="1_0f027"]
 
-[node name="SetDressing" type="Control"]
+[node name="SetDressing" type="Control" unique_id=808870449]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0f027")
 
-[node name="left" type="ReferenceRect" parent="."]
+[node name="left" type="ReferenceRect" parent="." unique_id=854722233]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -21,7 +21,7 @@ offset_left = 1.1439209
 offset_right = -0.32808304
 offset_bottom = -0.1760025
 
-[node name="right" type="ReferenceRect" parent="."]
+[node name="right" type="ReferenceRect" parent="." unique_id=1892814894]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -32,7 +32,7 @@ offset_left = -0.37609863
 offset_right = -3.0
 offset_bottom = -0.1760025
 
-[node name="caCenter" type="ReferenceRect" parent="."]
+[node name="caCenter" type="ReferenceRect" parent="." unique_id=1721194073]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -42,7 +42,7 @@ anchor_bottom = 0.062000003
 offset_left = 0.3199463
 offset_bottom = -0.1760025
 
-[node name="leftish" type="ReferenceRect" parent="."]
+[node name="leftish" type="ReferenceRect" parent="." unique_id=548728321]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -53,7 +53,7 @@ offset_left = 0.19198608
 offset_right = -0.12799072
 offset_bottom = -0.1760025
 
-[node name="rightish" type="ReferenceRect" parent="."]
+[node name="rightish" type="ReferenceRect" parent="." unique_id=968785661]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -64,7 +64,7 @@ offset_left = 0.12792969
 offset_right = -0.1920166
 offset_bottom = -0.1760025
 
-[node name="far_left" type="ReferenceRect" parent="."]
+[node name="far_left" type="ReferenceRect" parent="." unique_id=1566487482]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -75,7 +75,7 @@ offset_left = -0.12799072
 offset_right = -0.44799805
 offset_bottom = -0.1760025
 
-[node name="far_right" type="ReferenceRect" parent="."]
+[node name="far_right" type="ReferenceRect" parent="." unique_id=1237233116]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -86,3 +86,10 @@ anchor_bottom = 0.062000003
 offset_top = 29.808002
 offset_right = -0.32006836
 offset_bottom = -0.1760025
+
+[node name="background" type="TextureRect" parent="." unique_id=1619975781]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 649.0
+expand_mode = 3

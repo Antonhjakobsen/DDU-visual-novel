@@ -1,14 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://m35kvadloyty"]
+[gd_scene format=3 uid="uid://m35kvadloyty"]
 
 [ext_resource type="Texture2D" uid="uid://cxsf0cy1slhc6" path="res://sprites/Test character.png" id="1_jqnm4"]
 [ext_resource type="Script" uid="uid://d4el5njrjlkyb" path="res://character_example.gd" id="2_jqnm4"]
+[ext_resource type="PackedScene" uid="uid://dr7po7w2pws6p" path="res://dialog_box.tscn" id="3_xxhdl"]
 
-[node name="character_example" type="TextureRect"]
-offset_top = 2.0
-offset_right = 471.0
-offset_bottom = 5654.0
+[node name="character_example" type="TextureRect" unique_id=1133508006]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_right = 576.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_jqnm4")
 expand_mode = 5
 stretch_mode = 4
 script = ExtResource("2_jqnm4")
+dialog_box = ExtResource("3_xxhdl")
 default_sprite = ExtResource("1_jqnm4")
