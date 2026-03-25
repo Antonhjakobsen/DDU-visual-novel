@@ -7,13 +7,12 @@ func _ready() -> void:
 	add_child(o)
 	
 	o.snap(%right)
-	await o.move(%far_right,2)
-	await wait(1)
-	await o.move(%right,2)
-	await wait(1)
-	await o.jump(%right,0.5)
+	await o.move(%far_right,0.5)
+	await wait(0.25)
+	await o.move(%right,0.5)
+	await wait(0.25)
 	o.flip_h=true
-	await o.say("lorem ipsum...")
+	await o.say("hola")
 	await o.move(%leftish,2)
 	await wait(1)
 	await o.move(%rightish,2)

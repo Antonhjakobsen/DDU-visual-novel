@@ -5,12 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://dr7po7w2pws6p" path="res://dialog_box.tscn" id="3_xxhdl"]
 
 [node name="character_example" type="TextureRect" unique_id=1133508006]
-anchors_preset = 13
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -32.0
-offset_right = 576.0
+visibility_layer = 2
+anchors_preset = -1
+anchor_left = 0.59300005
+anchor_right = 0.8880001
+anchor_bottom = 0.56100005
+offset_left = -0.13604736
+offset_right = 0.023925781
+offset_bottom = -0.19750977
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_jqnm4")

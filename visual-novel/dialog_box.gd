@@ -1,5 +1,7 @@
 class_name DialogBox extends Panel
 
+var flick:bool=false
+
 @export var dialog:String="lorem ipsum...":
 	set(n):
 		dialog=n
@@ -7,11 +9,20 @@ class_name DialogBox extends Panel
 var tween:Tween
 
 signal complete
-# Called when the node enters the scene tree for the first time.
+
+func _on_button_pressed() -> void:
+	flick=true
+	print("click button ")
+
+func _on_button_button_up() -> void:
+	await get_tree().create_timer(1.0).timeout
+	flick=false
+
 func _input(event: InputEvent) -> void:
+	await get_tree().create_timer(0.1).timeout
 	if ! is_node_ready():
 		return
-	if event is InputEventMouseButton and event.is_pressed():
+	if event is InputEventMouseButton and event.is_pressed() and flick==true:
 		print ("Click")
 		advance()
 

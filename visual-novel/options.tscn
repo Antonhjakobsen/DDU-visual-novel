@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://cmn4xq2380iw3"]
+
+[sub_resource type="FontVariation" id="FontVariation_g3pqo"]
+spacing_glyph = 10
+baseline_offset = -0.23
+
+[node name="Options" type="MenuBar" unique_id=419448228]
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.15
+anchor_right = 0.9
+anchor_bottom = 0.85
+offset_left = -0.28800964
+offset_top = -0.1760025
+offset_right = 0.35559082
+offset_bottom = -0.19702148
+
+[node name="Volume" type="RichTextLabel" parent="." unique_id=1409049276]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.125
+anchor_right = 0.88000005
+anchor_bottom = 0.23500001
+offset_bottom = 0.10630798
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 32
+text = " MASTER VOLUME"
+
+[node name="HSlider" type="HSlider" parent="Volume" unique_id=327095694]
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.036254883
+offset_bottom = -0.021377563
+
+[node name="Button2" type="Button" parent="." unique_id=573114817]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.374
+anchor_right = 0.88000005
+anchor_bottom = 0.48400003
+offset_top = 0.05882263
+offset_bottom = 0.16513062
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontVariation_g3pqo")
+theme_override_font_sizes/font_size = 30
+text = " MUSIC VOLUME"
+alignment = 0
+
+[node name="HSlider" type="HSlider" parent="Button2" unique_id=469540492]
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.036254883
+offset_bottom = -0.021377563
+
+[node name="Button3" type="Button" parent="." unique_id=1166091337]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.623
+anchor_right = 0.88000005
+anchor_bottom = 0.73300004
+offset_top = 0.11767578
+offset_bottom = 0.2239685
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontVariation_g3pqo")
+theme_override_font_sizes/font_size = 30
+text = " SFX VOLUME"
+alignment = 0
+
+[node name="HSlider" type="HSlider" parent="Button3" unique_id=117391185]
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.036254883
+offset_bottom = -0.021377563
+
+[node name="Button4" type="Button" parent="." unique_id=155151137]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.87500006
+anchor_right = 0.88000005
+anchor_bottom = 0.9850001
+offset_top = -0.18423462
+offset_bottom = -0.077941895
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontVariation_g3pqo")
+theme_override_font_sizes/font_size = 30
+text = " text.speed (why \".\")?"
+alignment = 0
+
+[node name="HSlider" type="HSlider" parent="Button4" unique_id=427546183]
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.036254883
+offset_bottom = -0.021377563

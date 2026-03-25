@@ -18,3 +18,11 @@ config/name="visual-novel"
 run/main_scene="uid://b7arq43ejhy33"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/aspect="expand"
+
+[gui]
+
+theme/custom_font="uid://wpwxbfvdsfr2"

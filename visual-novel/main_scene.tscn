@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b7arq43ejhy33"]
 
 [ext_resource type="Script" uid="uid://dqqfj2g64o3x7" path="res://main_scene.gd" id="1_0f027"]
+[ext_resource type="Texture2D" uid="uid://l6m6cs0r3i7y" path="res://backgrounds/Rooftop.jpg" id="2_2c62f"]
 
 [node name="SetDressing" type="Control" unique_id=808870449]
 layout_mode = 3
@@ -92,4 +93,6 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 649.0
-expand_mode = 3
+texture = ExtResource("2_2c62f")
+expand_mode = 1
+stretch_mode = 5
