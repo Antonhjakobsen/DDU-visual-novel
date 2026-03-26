@@ -19,7 +19,7 @@ func _on_button_button_up() -> void:
 	flick=false
 
 func _input(event: InputEvent) -> void:
-	await get_tree().create_timer(0.1).timeout
+	await get_tree().create_timer(0.2).timeout
 	if ! is_node_ready():
 		return
 	if event is InputEventMouseButton and event.is_pressed() and flick==true:

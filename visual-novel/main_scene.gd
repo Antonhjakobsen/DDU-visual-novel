@@ -13,11 +13,15 @@ func _ready() -> void:
 	await wait(0.25)
 	o.flip_h=true
 	await o.say("hola")
-	await o.move(%leftish,2)
-	await wait(1)
+	await o.move(%leftish,1)
+	await wait(0.5)
+	await o.say("halloo!")
 	await o.move(%rightish,2)
 	await wait(1)
 	await o.move(%caCenter,2)
 
 func wait(seconds:float) -> Signal:
 	return get_tree().create_timer(seconds).timeout
+
+func _on_settings_button_down() -> void:
+	get_tree().change_scene_to_file("res://options.tscn")

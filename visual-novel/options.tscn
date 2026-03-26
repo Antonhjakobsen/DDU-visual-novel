@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cmn4xq2380iw3"]
+[gd_scene load_steps=13 format=3 uid="uid://cmn4xq2380iw3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3pqo"]
 bg_color = Color(0, 0, 0, 1)
@@ -47,30 +47,30 @@ bg_color = Color(0, 0, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ao2gm"]
 bg_color = Color(0, 0, 0, 1)
 
-[node name="Options" type="MenuBar" unique_id=419448228]
+[node name="Options" type="MenuBar"]
 anchors_preset = -1
 anchor_left = 0.1
 anchor_top = 0.15
 anchor_right = 0.9
 anchor_bottom = 0.85
 offset_left = -0.28800964
-offset_top = -0.1760025
+offset_top = -31.200005
 offset_right = 0.35559082
 offset_bottom = -0.19702148
 
-[node name="PanelContainer1" type="PanelContainer" parent="." unique_id=354568017]
+[node name="PanelContainer1" type="PanelContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.12
 anchor_top = 0.125
 anchor_right = 0.88100004
 anchor_bottom = 0.23500001
-offset_top = -25.0
+offset_top = 12.000008
 offset_right = -0.40856934
-offset_bottom = -24.893692
+offset_bottom = 12.106316
 theme_override_styles/panel = SubResource("StyleBoxFlat_g3pqo")
 
-[node name="Volume" type="RichTextLabel" parent="PanelContainer1" unique_id=1409049276]
+[node name="Volume" type="RichTextLabel" parent="PanelContainer1"]
 light_mask = 2
 visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
@@ -78,7 +78,7 @@ layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
 text = "  MASTER VOLUME"
 
-[node name="Master volume" type="HSlider" parent="PanelContainer1/Volume" unique_id=327095694]
+[node name="Master volume" type="HSlider" parent="PanelContainer1/Volume"]
 unique_name_in_owner = true
 light_mask = 4
 visibility_layer = 4
@@ -99,15 +99,15 @@ theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
 theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
 theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
 
-[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1714279437]
+[node name="PanelContainer2" type="PanelContainer" parent="."]
 layout_mode = 0
 offset_left = 110.66921
-offset_top = 145.09212
+offset_top = 182.09213
 offset_right = 812.088
-offset_bottom = 195.09212
+offset_bottom = 232.09213
 theme_override_styles/panel = SubResource("StyleBoxFlat_5v8ap")
 
-[node name="Volume" type="RichTextLabel" parent="PanelContainer2" unique_id=1723475714]
+[node name="Volume" type="RichTextLabel" parent="PanelContainer2"]
 light_mask = 2
 visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
@@ -115,7 +115,7 @@ layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
 text = "  MASTER VOLUME"
 
-[node name="Music volume" type="HSlider" parent="PanelContainer2/Volume" unique_id=1699639605]
+[node name="Music volume" type="HSlider" parent="PanelContainer2/Volume"]
 unique_name_in_owner = true
 light_mask = 4
 visibility_layer = 4
@@ -136,15 +136,15 @@ theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
 theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
 theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
 
-[node name="PanelContainer3" type="PanelContainer" parent="." unique_id=768243566]
+[node name="PanelContainer3" type="PanelContainer" parent="."]
 layout_mode = 0
 offset_left = 110.66921
-offset_top = 258.48688
+offset_top = 295.48688
 offset_right = 812.088
-offset_bottom = 308.48688
+offset_bottom = 345.48688
 theme_override_styles/panel = SubResource("StyleBoxFlat_se8ut")
 
-[node name="Volume" type="RichTextLabel" parent="PanelContainer3" unique_id=116388582]
+[node name="Volume" type="RichTextLabel" parent="PanelContainer3"]
 light_mask = 2
 visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
@@ -152,7 +152,7 @@ layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
 text = "  MASTER VOLUME"
 
-[node name="SFX volume" type="HSlider" parent="PanelContainer3/Volume" unique_id=78287499]
+[node name="SFX volume" type="HSlider" parent="PanelContainer3/Volume"]
 unique_name_in_owner = true
 light_mask = 4
 visibility_layer = 4
@@ -173,15 +173,15 @@ theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
 theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
 theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
 
-[node name="PanelContainer4" type="PanelContainer" parent="." unique_id=1490064560]
+[node name="PanelContainer4" type="PanelContainer" parent="."]
 layout_mode = 0
 offset_left = 110.66921
-offset_top = 371.8816
+offset_top = 408.8816
 offset_right = 812.088
-offset_bottom = 421.8816
+offset_bottom = 458.8816
 theme_override_styles/panel = SubResource("StyleBoxFlat_ao2gm")
 
-[node name="Volume" type="RichTextLabel" parent="PanelContainer4" unique_id=383135954]
+[node name="Volume" type="RichTextLabel" parent="PanelContainer4"]
 light_mask = 2
 visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
@@ -189,7 +189,7 @@ layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
 text = "  MASTER VOLUME"
 
-[node name="text speed" type="HSlider" parent="PanelContainer4/Volume" unique_id=426754616]
+[node name="text speed" type="HSlider" parent="PanelContainer4/Volume"]
 unique_name_in_owner = true
 light_mask = 4
 visibility_layer = 4
