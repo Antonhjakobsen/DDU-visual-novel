@@ -15,9 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="visual-novel"
-run/main_scene="uid://d2khjacbs6auf"
-config/features=PackedStringArray("4.5", "Forward Plus")
+run/main_scene="uid://b7arq43ejhy33"
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://unx81pwnxsyo"
 
 [display]
 

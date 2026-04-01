@@ -1,117 +1,224 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7arq43ejhy33"]
+[gd_scene format=3 uid="uid://b7arq43ejhy33"]
 
-[ext_resource type="Script" uid="uid://dqqfj2g64o3x7" path="res://main_scene.gd" id="1_0f027"]
-[ext_resource type="Texture2D" uid="uid://l6m6cs0r3i7y" path="res://backgrounds/Rooftop.jpg" id="2_2c62f"]
+[ext_resource type="Script" path="res://master_volume.gd" id="1_d5x1h"]
+[ext_resource type="Script" path="res://music_volume.gd" id="2_8mm7a"]
+[ext_resource type="Script" path="res://sfx_volume.gd" id="3_hq1ik"]
+[ext_resource type="Script" path="res://text_speed.gd" id="4_nfk4m"]
 
-[node name="SetDressing" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_0f027")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3pqo"]
+bg_color = Color(0, 0, 0, 1)
 
-[node name="left" type="ReferenceRect" parent="."]
-unique_name_in_owner = true
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_g3pqo"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_g3pqo"]
+width = 8
+height = 12
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_g3pqo")
+normalize = false
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_5v8ap"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_5v8ap"]
+width = 8
+height = 12
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_5v8ap")
+normalize = false
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_se8ut"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_se8ut"]
+width = 8
+height = 12
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_se8ut")
+normalize = false
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ao2gm"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_07a1d"]
+color = Color(1, 1, 1, 1)
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5v8ap"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_se8ut"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ao2gm"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Options" type="MenuBar" unique_id=419448228]
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.15
+anchor_right = 0.9
+anchor_bottom = 0.85
+offset_left = -0.28800964
+offset_top = -0.1760025
+offset_right = 0.35559082
+offset_bottom = -0.19702148
+
+[node name="PanelContainer1" type="PanelContainer" parent="." unique_id=354568017]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.036000002
-anchor_bottom = 0.062000003
-offset_left = 1.1439209
-offset_top = 302.0
-offset_right = -0.32808304
-offset_bottom = 301.824
+anchor_left = 0.12
+anchor_top = 0.125
+anchor_right = 0.88100004
+anchor_bottom = 0.23500001
+offset_top = -25.0
+offset_right = -0.40856934
+offset_bottom = -24.893692
+theme_override_styles/panel = SubResource("StyleBoxFlat_g3pqo")
 
-[node name="right" type="ReferenceRect" parent="."]
+[node name="Volume" type="RichTextLabel" parent="PanelContainer1" unique_id=1409049276]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "  MASTER VOLUME"
+
+[node name="Master volume" type="HSlider" parent="PanelContainer1/Volume" unique_id=327095694]
 unique_name_in_owner = true
+light_mask = 4
+visibility_layer = 4
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.96300006
-anchor_right = 1.0
-anchor_bottom = 0.062000003
-offset_left = -0.37609863
-offset_top = 302.0
-offset_right = -3.0
-offset_bottom = 301.824
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.63964844
+offset_bottom = -0.021377563
+theme_override_constants/grabber_offset = -1
+theme_override_icons/grabber = SubResource("NoiseTexture2D_g3pqo")
+theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
+theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
+theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
+theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
+max_value = 1.0
+script = ExtResource("1_d5x1h")
 
-[node name="caCenter" type="ReferenceRect" parent="."]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.46500003
-anchor_right = 0.5
-anchor_bottom = 0.062000003
-offset_left = 0.3199463
-offset_top = 302.0
-offset_bottom = 301.824
-
-[node name="leftish" type="ReferenceRect" parent="."]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.22900002
-anchor_right = 0.264
-anchor_bottom = 0.062000003
-offset_left = 0.19198608
-offset_top = 302.0
-offset_right = -0.12799072
-offset_bottom = 301.824
-
-[node name="rightish" type="ReferenceRect" parent="."]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.73600006
-anchor_right = 0.771
-anchor_bottom = 0.062000003
-offset_left = 0.12792969
-offset_top = 302.0
-offset_right = -0.1920166
-offset_bottom = 301.824
-
-[node name="far_left" type="ReferenceRect" parent="."]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.23600002
-anchor_right = -0.201
-anchor_bottom = 0.062000003
-offset_left = -0.12799072
-offset_top = 302.0
-offset_right = -0.44799805
-offset_bottom = 301.824
-
-[node name="far_right" type="ReferenceRect" parent="."]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.125
-anchor_top = -0.046000004
-anchor_right = 1.1600001
-anchor_bottom = 0.062000003
-offset_top = 331.808
-offset_right = -0.32006836
-offset_bottom = 301.824
-
-[node name="background" type="TextureRect" parent="."]
-unique_name_in_owner = true
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1714279437]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 649.0
-texture = ExtResource("2_2c62f")
-stretch_mode = 5
+offset_left = 110.66921
+offset_top = 145.09212
+offset_right = 812.088
+offset_bottom = 195.09212
+theme_override_styles/panel = SubResource("StyleBoxFlat_5v8ap")
 
-[node name="Settings" type="Button" parent="."]
+[node name="Volume" type="RichTextLabel" parent="PanelContainer2" unique_id=1723475714]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "  MUSIC VOLUME"
+
+[node name="Music volume" type="HSlider" parent="PanelContainer2/Volume" unique_id=1699639605]
 unique_name_in_owner = true
+light_mask = 4
+visibility_layer = 4
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.9760001
-anchor_top = 0.002
-anchor_right = 1.0
-anchor_bottom = 0.042000003
-offset_left = -0.35205078
-offset_top = -0.296
-offset_bottom = -0.21600151
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.63964844
+offset_bottom = -0.021377563
+theme_override_constants/grabber_offset = -1
+theme_override_icons/grabber = SubResource("NoiseTexture2D_g3pqo")
+theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
+theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
+theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
+theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
+max_value = 1.0
+script = ExtResource("2_8mm7a")
 
-[connection signal="button_down" from="Settings" to="." method="_on_settings_button_down"]
+[node name="PanelContainer3" type="PanelContainer" parent="." unique_id=768243566]
+layout_mode = 0
+offset_left = 110.66921
+offset_top = 258.48688
+offset_right = 812.088
+offset_bottom = 308.48688
+theme_override_styles/panel = SubResource("StyleBoxFlat_se8ut")
+
+[node name="Volume" type="RichTextLabel" parent="PanelContainer3" unique_id=116388582]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "  SFX VOLUME"
+
+[node name="SFX volume" type="HSlider" parent="PanelContainer3/Volume" unique_id=78287499]
+unique_name_in_owner = true
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.63964844
+offset_bottom = -0.021377563
+theme_override_constants/grabber_offset = -1
+theme_override_icons/grabber = SubResource("NoiseTexture2D_g3pqo")
+theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
+theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
+theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
+theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
+max_value = 1.0
+script = ExtResource("3_hq1ik")
+
+[node name="PanelContainer4" type="PanelContainer" parent="." unique_id=1490064560]
+layout_mode = 0
+offset_left = 110.66921
+offset_top = 371.8816
+offset_right = 812.088
+offset_bottom = 421.8816
+theme_override_styles/panel = SubResource("StyleBoxFlat_ao2gm")
+
+[node name="Volume" type="RichTextLabel" parent="PanelContainer4" unique_id=383135954]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "  MASTER VOLUME"
+
+[node name="text speed" type="HSlider" parent="PanelContainer4/Volume" unique_id=426754616]
+unique_name_in_owner = true
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.63964844
+offset_bottom = -0.021377563
+theme_override_constants/grabber_offset = -1
+theme_override_icons/grabber = SubResource("NoiseTexture2D_g3pqo")
+theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
+theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
+theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
+theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
+max_value = 1.0
+script = ExtResource("4_nfk4m")
