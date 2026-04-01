@@ -198,7 +198,7 @@ visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
-text = "  MASTER VOLUME"
+text = "  text.speed"
 
 [node name="text speed" type="HSlider" parent="PanelContainer4/Volume" unique_id=426754616]
 unique_name_in_owner = true
