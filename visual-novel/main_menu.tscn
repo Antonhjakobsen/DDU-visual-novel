@@ -5,50 +5,66 @@
 [node name="Main menu" type="Node2D" unique_id=1907233419]
 script = ExtResource("1_06t4h")
 
-[node name="Button manager" type="Control" parent="." unique_id=1420562431]
+[node name="Button manager1" type="Control" parent="." unique_id=716363341]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 1151.0
+offset_bottom = 647.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="Button manager" unique_id=629461746]
+[node name="PanelContainer" type="PanelContainer" parent="Button manager1" unique_id=1021619473]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 2.5
-anchor_top = 2.325
-anchor_right = 9.700001
-anchor_bottom = 4.65
-offset_right = -3.0517578e-05
+anchor_left = 0.08800001
+anchor_top = 0.141
+anchor_right = 0.34
+anchor_bottom = 0.286
+offset_left = -0.37600708
+offset_top = -0.085998535
+offset_right = -1.6799927
+offset_bottom = -0.75601196
 
-[node name="Start" type="Button" parent="Button manager/PanelContainer" unique_id=624552884]
+[node name="start" type="Button" parent="Button manager1/PanelContainer" unique_id=870291803]
 layout_mode = 2
-theme_override_font_sizes/font_size = 80
+theme_override_font_sizes/font_size = 64
 text = "Start"
 
-[node name="PanelContainer2" type="PanelContainer" parent="Button manager" unique_id=777347757]
-layout_mode = 0
-offset_left = 101.0
-offset_top = 278.0
-offset_right = 389.0
-offset_bottom = 371.0
+[node name="PanelContainer2" type="PanelContainer" parent="Button manager1" unique_id=234043744]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.08800001
+anchor_top = 0.42600003
+anchor_right = 0.33900002
+anchor_bottom = 0.57000005
+offset_left = -0.37600708
+offset_top = -0.1960144
+offset_right = -0.52801514
+offset_bottom = -0.22003174
 
-[node name="Options" type="Button" parent="Button manager/PanelContainer2" unique_id=2096653821]
+[node name="options" type="Button" parent="Button manager1/PanelContainer2" unique_id=1783452891]
 layout_mode = 2
-theme_override_font_sizes/font_size = 80
+theme_override_font_sizes/font_size = 64
 text = "Options"
 
-[node name="PanelContainer3" type="PanelContainer" parent="Button manager" unique_id=400112297]
-layout_mode = 0
-offset_left = 101.0
-offset_top = 463.0
-offset_right = 389.0
-offset_bottom = 556.0
+[node name="PanelContainer3" type="PanelContainer" parent="Button manager1" unique_id=1936273572]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.08800001
+anchor_top = 0.711
+anchor_right = 0.33900002
+anchor_bottom = 0.85400003
+offset_left = -0.37600708
+offset_top = -0.30603027
+offset_right = -0.52801514
+offset_bottom = 0.315979
 
-[node name="Quit" type="Button" parent="Button manager/PanelContainer3" unique_id=1120512124]
+[node name="quit" type="Button" parent="Button manager1/PanelContainer3" unique_id=1731695630]
 layout_mode = 2
-theme_override_font_sizes/font_size = 80
+theme_override_font_sizes/font_size = 64
 text = "Quit"
 
-[connection signal="pressed" from="Button manager/PanelContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Button manager/PanelContainer2/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Button manager/PanelContainer3/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Button manager1/PanelContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button manager1/PanelContainer2/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button manager1/PanelContainer3/quit" to="." method="_on_quit_pressed"]
