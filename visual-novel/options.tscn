@@ -125,13 +125,13 @@ offset_bottom = -0.19702148
 [node name="PanelContainer1" type="PanelContainer" parent="." unique_id=1564214704]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.12
-anchor_top = 0.125
+anchor_left = 0.120000005
+anchor_top = 0.15
 anchor_right = 0.88100004
-anchor_bottom = 0.23500001
-offset_top = 12.000008
+anchor_bottom = 0.26000002
+offset_top = -0.11506653
 offset_right = -0.40856934
-offset_bottom = 12.106316
+offset_bottom = -0.008758545
 theme_override_styles/panel = SubResource("StyleBoxFlat_g3pqo")
 
 [node name="Volume" type="RichTextLabel" parent="PanelContainer1" unique_id=1749988708]
@@ -165,11 +165,16 @@ theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
 script = SubResource("GDScript_g3pqo")
 
 [node name="PanelContainer2" type="PanelContainer" parent="." unique_id=727764574]
-layout_mode = 0
-offset_left = 110.66921
-offset_top = 182.09213
-offset_right = 812.088
-offset_bottom = 232.09213
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.37600002
+anchor_right = 0.88100004
+anchor_bottom = 0.47900003
+offset_left = -1.5258789e-05
+offset_top = -0.11859131
+offset_right = -0.40856934
+offset_bottom = -0.032699585
 theme_override_styles/panel = SubResource("StyleBoxFlat_5v8ap")
 
 [node name="Volume" type="RichTextLabel" parent="PanelContainer2" unique_id=723062456]
@@ -178,7 +183,7 @@ visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
-text = "  text.speed"
+text = "  SOUND VOLUME"
 
 [node name="Music volume" type="HSlider" parent="PanelContainer2/Volume" unique_id=2131355321]
 unique_name_in_owner = true
@@ -203,11 +208,16 @@ theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
 script = SubResource("GDScript_5v8ap")
 
 [node name="PanelContainer3" type="PanelContainer" parent="." unique_id=1359636759]
-layout_mode = 0
-offset_left = 110.66921
-offset_top = 295.48688
-offset_right = 812.088
-offset_bottom = 345.48688
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.61
+anchor_right = 0.88100004
+anchor_bottom = 0.71300006
+offset_left = -1.5258789e-05
+offset_top = -0.12094116
+offset_right = -0.40856934
+offset_bottom = -0.035064697
 theme_override_styles/panel = SubResource("StyleBoxFlat_se8ut")
 
 [node name="Volume" type="RichTextLabel" parent="PanelContainer3" unique_id=398877445]
@@ -216,7 +226,7 @@ visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
-text = "  MASTER VOLUME"
+text = "  SFX VOLUME"
 
 [node name="SFX volume" type="HSlider" parent="PanelContainer3/Volume" unique_id=2007330296]
 unique_name_in_owner = true
@@ -241,11 +251,16 @@ theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
 script = SubResource("GDScript_se8ut")
 
 [node name="PanelContainer4" type="PanelContainer" parent="." unique_id=184310681]
-layout_mode = 0
-offset_left = 110.66921
-offset_top = 408.8816
-offset_right = 812.088
-offset_bottom = 458.8816
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.84400004
+anchor_right = 0.88100004
+anchor_bottom = 0.947
+offset_left = -1.5258789e-05
+offset_top = -0.12332153
+offset_right = -0.40856934
+offset_bottom = -0.03744507
 theme_override_styles/panel = SubResource("StyleBoxFlat_ao2gm")
 
 [node name="Volume" type="RichTextLabel" parent="PanelContainer4" unique_id=1058148761]
@@ -254,7 +269,7 @@ visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
-text = "  MASTER VOLUME"
+text = "  text.speed"
 
 [node name="text speed" type="HSlider" parent="PanelContainer4/Volume" unique_id=300738231]
 unique_name_in_owner = true
