@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7arq43ejhy33"]
+[gd_scene format=3 uid="uid://b7arq43ejhy33"]
 
 [ext_resource type="Script" uid="uid://dqqfj2g64o3x7" path="res://main_scene.gd" id="1_0f027"]
 [ext_resource type="Texture2D" uid="uid://l6m6cs0r3i7y" path="res://backgrounds/Rooftop.jpg" id="2_2c62f"]
 
-[node name="SetDressing" type="Control"]
+[node name="SetDressing" type="Control" unique_id=1644120660]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0f027")
 
-[node name="left" type="ReferenceRect" parent="."]
+[node name="left" type="ReferenceRect" parent="." unique_id=1117942143]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -23,7 +23,7 @@ offset_top = 302.0
 offset_right = -0.32808304
 offset_bottom = 301.824
 
-[node name="right" type="ReferenceRect" parent="."]
+[node name="right" type="ReferenceRect" parent="." unique_id=86770285]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -35,7 +35,7 @@ offset_top = 302.0
 offset_right = -3.0
 offset_bottom = 301.824
 
-[node name="caCenter" type="ReferenceRect" parent="."]
+[node name="caCenter" type="ReferenceRect" parent="." unique_id=26587435]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -46,7 +46,7 @@ offset_left = 0.3199463
 offset_top = 302.0
 offset_bottom = 301.824
 
-[node name="leftish" type="ReferenceRect" parent="."]
+[node name="leftish" type="ReferenceRect" parent="." unique_id=2118716141]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -58,7 +58,7 @@ offset_top = 302.0
 offset_right = -0.12799072
 offset_bottom = 301.824
 
-[node name="rightish" type="ReferenceRect" parent="."]
+[node name="rightish" type="ReferenceRect" parent="." unique_id=1137352780]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -70,7 +70,7 @@ offset_top = 302.0
 offset_right = -0.1920166
 offset_bottom = 301.824
 
-[node name="far_left" type="ReferenceRect" parent="."]
+[node name="far_left" type="ReferenceRect" parent="." unique_id=2069025865]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -82,7 +82,7 @@ offset_top = 302.0
 offset_right = -0.44799805
 offset_bottom = 301.824
 
-[node name="far_right" type="ReferenceRect" parent="."]
+[node name="far_right" type="ReferenceRect" parent="." unique_id=346516953]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -94,7 +94,7 @@ offset_top = 331.808
 offset_right = -0.32006836
 offset_bottom = 301.824
 
-[node name="background" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="." unique_id=1580314285]
 unique_name_in_owner = true
 layout_mode = 0
 offset_right = 1152.0
@@ -102,7 +102,7 @@ offset_bottom = 649.0
 texture = ExtResource("2_2c62f")
 stretch_mode = 5
 
-[node name="Settings" type="Button" parent="."]
+[node name="Settings" type="Button" parent="." unique_id=865515030]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1

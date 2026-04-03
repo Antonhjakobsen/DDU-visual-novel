@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dr7po7w2pws6p"]
+[gd_scene format=3 uid="uid://dr7po7w2pws6p"]
 
 [ext_resource type="Script" uid="uid://oxaolyk3hnyj" path="res://dialog_box.gd" id="1_hwgul"]
 
-[node name="Panel" type="Panel"]
+[node name="Panel" type="Panel" unique_id=945714904]
 anchors_preset = -1
 anchor_left = 0.29700002
 anchor_top = 0.67300004
@@ -14,7 +14,7 @@ offset_right = 0.4239502
 offset_bottom = 0.28796387
 script = ExtResource("1_hwgul")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1013491216]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.998
@@ -22,13 +22,13 @@ anchor_bottom = 0.994
 offset_right = -0.09802246
 offset_bottom = 0.055999756
 
-[node name="Dialogbox" type="RichTextLabel" parent="PanelContainer"]
+[node name="Dialogbox" type="RichTextLabel" parent="PanelContainer" unique_id=1168259944]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 50
 text = "lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... "
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1903748325]
 unique_name_in_owner = true
 light_mask = 0
 visibility_layer = 0

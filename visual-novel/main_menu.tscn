@@ -11,41 +11,44 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Start" type="Button" parent="Button manager" unique_id=624552884]
+[node name="PanelContainer" type="PanelContainer" parent="Button manager" unique_id=629461746]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 2.5
-anchor_top = 2.314
+anchor_top = 2.325
 anchor_right = 9.700001
-anchor_bottom = 4.628
-offset_top = 1.5258789e-05
+anchor_bottom = 4.65
+offset_right = -3.0517578e-05
+
+[node name="Start" type="Button" parent="Button manager/PanelContainer" unique_id=624552884]
+layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "Start"
 
-[node name="Options" type="Button" parent="Button manager" unique_id=2096653821]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 2.5
-anchor_top = 6.942
-anchor_right = 9.8
-anchor_bottom = 9.256
+[node name="PanelContainer2" type="PanelContainer" parent="Button manager" unique_id=777347757]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 278.0
+offset_right = 389.0
+offset_bottom = 371.0
+
+[node name="Options" type="Button" parent="Button manager/PanelContainer2" unique_id=2096653821]
+layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "Options"
 
-[node name="Quit" type="Button" parent="Button manager" unique_id=1120512124]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 2.5
-anchor_top = 11.57
-anchor_right = 9.81
-anchor_bottom = 13.88
-offset_left = 0.9999924
-offset_top = -3.0517578e-05
-offset_right = -3.0517578e-05
-offset_bottom = -3.0517578e-05
+[node name="PanelContainer3" type="PanelContainer" parent="Button manager" unique_id=400112297]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 463.0
+offset_right = 389.0
+offset_bottom = 556.0
+
+[node name="Quit" type="Button" parent="Button manager/PanelContainer3" unique_id=1120512124]
+layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "Quit"
 
-[connection signal="pressed" from="Button manager/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Button manager/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Button manager/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Button manager/PanelContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button manager/PanelContainer2/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button manager/PanelContainer3/Quit" to="." method="_on_quit_pressed"]
