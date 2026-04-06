@@ -1,0 +1,294 @@
+[gd_scene format=3 uid="uid://cmn4xq2380iw3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3pqo"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_g3pqo"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_g3pqo"]
+width = 8
+height = 12
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_g3pqo")
+normalize = false
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_5v8ap"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_5v8ap"]
+width = 8
+height = 12
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_5v8ap")
+normalize = false
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_se8ut"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_se8ut"]
+width = 8
+height = 12
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_se8ut")
+normalize = false
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ao2gm"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_07a1d"]
+color = Color(1, 1, 1, 1)
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 5
+
+[sub_resource type="GDScript" id="GDScript_g3pqo"]
+script/source = "extends HSlider
+
+@export var bus_name: String
+
+var bus_index: int
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	bus_index=AudioServer.get_bus_index(bus_name)
+	value_changed.connect(_on_value_changed)
+	value=db_to_linear(AudioServer.get_bus_volume_db(bus_index))
+
+func _on_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(bus_index, linear_to_db(value))
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5v8ap"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="GDScript" id="GDScript_5v8ap"]
+script/source = "extends HSlider
+
+@export var bus_name: String
+
+var bus_index: int
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	bus_index=AudioServer.get_bus_index(bus_name)
+	value_changed.connect(_on_value_changed)
+	value=db_to_linear(AudioServer.get_bus_volume_db(bus_index))
+
+func _on_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(bus_index, linear_to_db(value))
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_se8ut"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="GDScript" id="GDScript_se8ut"]
+script/source = "extends HSlider
+
+@export var bus_name: String
+
+var bus_index: int
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	bus_index=AudioServer.get_bus_index(bus_name)
+	value_changed.connect(_on_value_changed)
+	value=db_to_linear(AudioServer.get_bus_volume_db(bus_index))
+
+func _on_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(bus_index, linear_to_db(value))
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ao2gm"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="GDScript" id="GDScript_ao2gm"]
+script/source = "extends HSlider
+
+@export var bus_name: String
+
+var bus_index: int
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	bus_index=AudioServer.get_bus_index(bus_name)
+	value_changed.connect(_on_value_changed)
+	value=db_to_linear(AudioServer.get_bus_volume_db(bus_index))
+
+func _on_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(bus_index, linear_to_db(value))
+"
+
+[node name="Options" type="MenuBar" unique_id=75796226]
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.15
+anchor_right = 0.9
+anchor_bottom = 0.85
+offset_left = -0.28800964
+offset_top = -31.200005
+offset_right = 0.35559082
+offset_bottom = -0.19702148
+
+[node name="PanelContainer1" type="PanelContainer" parent="." unique_id=1564214704]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.15
+anchor_right = 0.88100004
+anchor_bottom = 0.26000002
+offset_top = -0.11506653
+offset_right = -0.40856934
+offset_bottom = -0.008758545
+theme_override_styles/panel = SubResource("StyleBoxFlat_g3pqo")
+
+[node name="Volume" type="RichTextLabel" parent="PanelContainer1" unique_id=1749988708]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "  MASTER VOLUME"
+
+[node name="Master volume" type="HSlider" parent="PanelContainer1/Volume" unique_id=1979929342]
+unique_name_in_owner = true
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.63964844
+offset_bottom = -0.021377563
+theme_override_constants/grabber_offset = -1
+theme_override_icons/grabber = SubResource("NoiseTexture2D_g3pqo")
+theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
+theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
+theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
+theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
+script = SubResource("GDScript_g3pqo")
+
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=727764574]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.37600002
+anchor_right = 0.88100004
+anchor_bottom = 0.47900003
+offset_left = -1.5258789e-05
+offset_top = -0.11859131
+offset_right = -0.40856934
+offset_bottom = -0.032699585
+theme_override_styles/panel = SubResource("StyleBoxFlat_5v8ap")
+
+[node name="Volume" type="RichTextLabel" parent="PanelContainer2" unique_id=723062456]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "  SOUND VOLUME"
+
+[node name="Music volume" type="HSlider" parent="PanelContainer2/Volume" unique_id=2131355321]
+unique_name_in_owner = true
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.63964844
+offset_bottom = -0.021377563
+theme_override_constants/grabber_offset = -1
+theme_override_icons/grabber = SubResource("NoiseTexture2D_g3pqo")
+theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
+theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
+theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
+theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
+script = SubResource("GDScript_5v8ap")
+
+[node name="PanelContainer3" type="PanelContainer" parent="." unique_id=1359636759]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.61
+anchor_right = 0.88100004
+anchor_bottom = 0.71300006
+offset_left = -1.5258789e-05
+offset_top = -0.12094116
+offset_right = -0.40856934
+offset_bottom = -0.035064697
+theme_override_styles/panel = SubResource("StyleBoxFlat_se8ut")
+
+[node name="Volume" type="RichTextLabel" parent="PanelContainer3" unique_id=398877445]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "  SFX VOLUME"
+
+[node name="SFX volume" type="HSlider" parent="PanelContainer3/Volume" unique_id=2007330296]
+unique_name_in_owner = true
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.63964844
+offset_bottom = -0.021377563
+theme_override_constants/grabber_offset = -1
+theme_override_icons/grabber = SubResource("NoiseTexture2D_g3pqo")
+theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
+theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
+theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
+theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
+script = SubResource("GDScript_se8ut")
+
+[node name="PanelContainer4" type="PanelContainer" parent="." unique_id=184310681]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.120000005
+anchor_top = 0.84400004
+anchor_right = 0.88100004
+anchor_bottom = 0.947
+offset_left = -1.5258789e-05
+offset_top = -0.12332153
+offset_right = -0.40856934
+offset_bottom = -0.03744507
+theme_override_styles/panel = SubResource("StyleBoxFlat_ao2gm")
+
+[node name="Volume" type="RichTextLabel" parent="PanelContainer4" unique_id=1058148761]
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "  text.speed"
+
+[node name="text speed" type="HSlider" parent="PanelContainer4/Volume" unique_id=300738231]
+unique_name_in_owner = true
+light_mask = 4
+visibility_layer = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.038000003
+anchor_top = 0.606
+anchor_right = 0.97200006
+anchor_bottom = 0.92600006
+offset_left = 0.28889847
+offset_top = -0.021375656
+offset_right = 0.63964844
+offset_bottom = -0.021377563
+theme_override_constants/grabber_offset = -1
+theme_override_icons/grabber = SubResource("NoiseTexture2D_g3pqo")
+theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
+theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
+theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
+theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
+script = SubResource("GDScript_ao2gm")

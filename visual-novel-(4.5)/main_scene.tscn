@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://b7arq43ejhy33"]
+
+[ext_resource type="Script" uid="uid://dqqfj2g64o3x7" path="res://main_scene.gd" id="1_0f027"]
+[ext_resource type="Texture2D" uid="uid://l6m6cs0r3i7y" path="res://backgrounds/Rooftop.jpg" id="2_2c62f"]
+
+[node name="SetDressing" type="Control" unique_id=1644120660]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0f027")
+
+[node name="left" type="ReferenceRect" parent="." unique_id=1117942143]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.036000002
+anchor_bottom = 0.062000003
+offset_left = 1.1439209
+offset_top = 302.0
+offset_right = -0.32808304
+offset_bottom = 301.824
+
+[node name="right" type="ReferenceRect" parent="." unique_id=86770285]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.96300006
+anchor_right = 1.0
+anchor_bottom = 0.062000003
+offset_left = -0.37609863
+offset_top = 302.0
+offset_right = -3.0
+offset_bottom = 301.824
+
+[node name="caCenter" type="ReferenceRect" parent="." unique_id=26587435]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.46500003
+anchor_right = 0.5
+anchor_bottom = 0.062000003
+offset_left = 0.3199463
+offset_top = 302.0
+offset_bottom = 301.824
+
+[node name="leftish" type="ReferenceRect" parent="." unique_id=2118716141]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22900002
+anchor_right = 0.264
+anchor_bottom = 0.062000003
+offset_left = 0.19198608
+offset_top = 302.0
+offset_right = -0.12799072
+offset_bottom = 301.824
+
+[node name="rightish" type="ReferenceRect" parent="." unique_id=1137352780]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.73600006
+anchor_right = 0.771
+anchor_bottom = 0.062000003
+offset_left = 0.12792969
+offset_top = 302.0
+offset_right = -0.1920166
+offset_bottom = 301.824
+
+[node name="far_left" type="ReferenceRect" parent="." unique_id=2069025865]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.23600002
+anchor_right = -0.201
+anchor_bottom = 0.062000003
+offset_left = -0.12799072
+offset_top = 302.0
+offset_right = -0.44799805
+offset_bottom = 301.824
+
+[node name="far_right" type="ReferenceRect" parent="." unique_id=346516953]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.125
+anchor_top = -0.046000004
+anchor_right = 1.1600001
+anchor_bottom = 0.062000003
+offset_top = 331.808
+offset_right = -0.32006836
+offset_bottom = 301.824
+
+[node name="background" type="TextureRect" parent="." unique_id=1580314285]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 1.0
+texture = ExtResource("2_2c62f")
+stretch_mode = 5
+
+[node name="Settings" type="Button" parent="." unique_id=865515030]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.9760001
+anchor_top = 0.002
+anchor_right = 1.0
+anchor_bottom = 0.042000003
+offset_left = -0.35205078
+offset_top = -0.296
+offset_bottom = -0.21600151
+
+[connection signal="button_down" from="Settings" to="." method="_on_settings_button_down"]
