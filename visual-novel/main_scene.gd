@@ -24,4 +24,5 @@ func wait(seconds:float) -> Signal:
 	return get_tree().create_timer(seconds).timeout
 
 func _on_settings_button_down() -> void:
-	get_tree().change_scene_to_file("res://options.tscn")
+	var overlay = load("res://options.tscn").instantiate()
+	get_tree().current_scene.add_child(overlay)
