@@ -62,6 +62,19 @@ offset_top = 0.031982422
 offset_right = -0.12799072
 offset_bottom = -0.14401245
 
+[node name="rightishUp" type="ReferenceRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.73600006
+anchor_top = 0.33900002
+anchor_right = 0.77000004
+anchor_bottom = 0.40100002
+offset_left = -0.30413818
+offset_top = -1.5258789e-05
+offset_right = 0.52789307
+offset_bottom = -0.17602539
+
 [node name="rightish" type="ReferenceRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 1
@@ -112,16 +125,39 @@ grow_vertical = 2
 texture = ExtResource("2_2c62f")
 stretch_mode = 5
 
-[node name="Settings" type="Button" parent="."]
-unique_name_in_owner = true
+[node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.9760001
-anchor_top = 0.002
-anchor_right = 1.0
-anchor_bottom = 0.042000003
-offset_left = -0.35205078
-offset_top = -0.296
-offset_bottom = -0.21600151
+anchor_left = 0.88500005
+anchor_top = 0.023000002
+anchor_right = 0.97300005
+anchor_bottom = 0.091000006
+offset_left = -0.52008057
+offset_top = 0.095998764
+offset_right = 0.104003906
+offset_bottom = 0.03199768
+color = Color(0, 0, 0, 1)
 
-[connection signal="button_down" from="Settings" to="." method="_on_settings_button_down"]
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "Settings"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="Button" parent="ColorRect/RichTextLabel"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(0, 0, 0, 0.8)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[connection signal="button_down" from="ColorRect/RichTextLabel/Settings" to="." method="_on_settings_button_down"]

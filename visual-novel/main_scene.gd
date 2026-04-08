@@ -1,6 +1,7 @@
 class_name SetDressing extends Control
 
 const CHARA1 = preload("res://character_example.tscn")
+var overlay = preload("res://options.tscn").instantiate()
 func _ready() -> void:
 	var o:VNCharacter=CHARA1.instantiate()
 	add_child(o)
@@ -15,13 +16,15 @@ func _ready() -> void:
 	await o.move(%leftish,1)
 	await wait(0.5)
 	await o.say("lorem ipsum 2")
-	await o.move(%rightish,2)
-	await wait(1)
-	await o.move(%caCenter,2)
+	await o.move(%rightish,1)
+	await o.move(%rightishUp,0.3)
+	await o.move(%rightish,0.3)
+	await wait(0.5)
+	await o.move(%caCenter,1)
 
 func wait(seconds:float) -> Signal:
 	return get_tree().create_timer(seconds).timeout
 
 func _on_settings_button_down() -> void:
-	var overlay = preload("res://options.tscn").instantiate()
 	get_tree().current_scene.add_child(overlay)
+	overlay.show()

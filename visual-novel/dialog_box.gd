@@ -19,7 +19,7 @@ func _on_button_button_up() -> void:
 	flick=false
 
 func _input(event: InputEvent) -> void:
-	await get_tree().create_timer(0.2).timeout
+	await get_tree().create_timer(0.3).timeout
 	if ! is_node_ready():
 		return
 	if event is InputEventMouseButton and event.is_pressed() and flick==true:
@@ -53,7 +53,7 @@ func reset_text():
 		tween.stop()
 	tween = get_tree().create_tween()
 	@warning_ignore("integer_division")
-	tween.tween_property(%Dialogbox, "visible_ratio", 1, (dialog.length()/30) +0.5).set_trans(Tween.TRANS_LINEAR)
+	tween.tween_property(%Dialogbox, "visible_ratio", 1, ((dialog.length()/30)*TextSpeed.text_speed) +0.5).set_trans(Tween.TRANS_LINEAR)
 	await tween.finished
 	tween=null
 	#self_destruct() ???? måske

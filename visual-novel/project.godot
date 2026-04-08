@@ -19,6 +19,11 @@ run/main_scene="uid://d2khjacbs6auf"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+TextSpeed="*res://text_speed.gd"
+Options="*res://options.gd"
+
 [display]
 
 window/stretch/mode="viewport"
