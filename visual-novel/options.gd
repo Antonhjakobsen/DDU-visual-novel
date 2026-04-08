@@ -18,3 +18,4 @@ func _on_text_speed_value_changed(value: float) -> void:
 
 func _on_close_settings_pressed() -> void:
 	self.hide()
+	get_tree().paused=false

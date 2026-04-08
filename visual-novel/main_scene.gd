@@ -28,3 +28,4 @@ func wait(seconds:float) -> Signal:
 func _on_settings_button_down() -> void:
 	get_tree().current_scene.add_child(overlay)
 	overlay.show()
+	get_tree().paused=true
