@@ -12,10 +12,10 @@ func _ready() -> void:
 	await o.move(%right,0.5)
 	await wait(0.25)
 	o.flip_h=true
-	await o.say("lorem ipsum")
+	await o.say("test","Last year I would still have been in middle school.\n  It’s been a while since then, we didn’t know each \n  other exactly.")
 	await o.move(%leftish,1)
 	await wait(0.5)
-	await o.say("lorem ipsum 2")
+	await o.say("test","lorem ipsum 2")
 	await o.move(%rightish,1)
 	await o.move(%rightishUp,0.3)
 	await o.move(%rightish,0.3)

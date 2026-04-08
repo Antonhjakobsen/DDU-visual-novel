@@ -129,13 +129,13 @@ stretch_mode = 5
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.88500005
-anchor_top = 0.023000002
+anchor_top = 0.022
 anchor_right = 0.97300005
 anchor_bottom = 0.091000006
-offset_left = -0.52008057
-offset_top = 0.095998764
-offset_right = 0.104003906
-offset_bottom = 0.03199768
+offset_left = 7.4799194
+offset_top = 3.0959978
+offset_right = 8.104004
+offset_bottom = 3.0319977
 color = Color(0, 0, 0, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
@@ -159,5 +159,22 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+clip_text = true
+
+[node name="Line2D2" type="Line2D" parent="."]
+z_index = 5
+position = Vector2(25, 637.5)
+points = PackedVector2Array(-5, -620.5, -4, -4.5, 1111, -5)
+width = 6.0
+default_color = Color(0.77254903, 0.78431374, 1, 0.5882353)
+
+[node name="Line2D" type="Line2D" parent="."]
+z_index = 5
+position = Vector2(21, 19)
+points = PackedVector2Array(-4, -5, 1111, -4.5, 1112, 610.5)
+width = 6.0
+default_color = Color(0.77254903, 0.78431374, 1, 0.5882353)
 
 [connection signal="button_down" from="ColorRect/RichTextLabel/Settings" to="." method="_on_settings_button_down"]

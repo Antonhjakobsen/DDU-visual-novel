@@ -8,6 +8,8 @@ var flick:bool=false
 		reset_text()
 var tween:Tween
 
+@export var charName:  String
+
 signal complete
 
 func _on_button_pressed() -> void:
@@ -47,7 +49,7 @@ func _ready() -> void:
 func reset_text():
 	if ! is_node_ready():
 		return
-	%Dialogbox.text=dialog
+	%Dialogbox.text=" "+charName+" \n  " + dialog
 	%Dialogbox.visible_ratio=0
 	if tween:
 		tween.stop()

@@ -23,7 +23,7 @@ func move(targ:Node, seconds:float=1, trans:Tween.TransitionType=Tween.TRANS_QUA
 	return tween.finished
 
 @warning_ignore("unused_parameter")
-func say(text: String, tag: String = "") -> Signal:
+func say(charName:String,text: String, tag: String = "") -> Signal:
 	if dialog_box == null:
 		print("unknown dialog box configuration: " + str(dialog_box))
 		garbage_error.emit()
@@ -31,5 +31,6 @@ func say(text: String, tag: String = "") -> Signal:
 
 	var d: DialogBox = dialog_box.instantiate()
 	d.dialog = text
+	d.charName=charName
 	get_tree().current_scene.add_child(d)
 	return d.complete

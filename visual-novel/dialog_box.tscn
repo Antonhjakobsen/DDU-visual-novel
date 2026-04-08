@@ -4,15 +4,26 @@
 
 [node name="Panel" type="Panel"]
 anchors_preset = -1
-anchor_left = 0.29700002
+anchor_left = 0.148
 anchor_top = 0.67300004
-anchor_right = 0.688
-anchor_bottom = 0.94400007
-offset_left = -0.14401245
-offset_top = -0.104034424
-offset_right = 0.4239502
-offset_bottom = 0.28796387
+anchor_right = 0.85
+anchor_bottom = 0.94500005
+offset_left = 1.5039978
+offset_top = 15.895966
+offset_right = 0.7999878
+offset_bottom = 15.639954
 script = ExtResource("1_hwgul")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.98800004
+anchor_bottom = 1.0220001
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 13.695984
+offset_bottom = -1.9160156
+color = Color(0, 0, 0, 1)
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -25,7 +36,7 @@ offset_bottom = 0.055999756
 [node name="Dialogbox" type="RichTextLabel" parent="PanelContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/normal_font_size = 50
+theme_override_font_sizes/normal_font_size = 40
 text = "lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... "
 
 [node name="Button" type="Button" parent="."]
