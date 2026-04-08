@@ -50,14 +50,14 @@ func _ready() -> void:
 
 [node name="Options" type="MenuBar"]
 anchors_preset = -1
-anchor_left = 0.1
-anchor_top = 0.102000006
-anchor_right = 0.76000005
-anchor_bottom = 0.85
-offset_left = 80.799995
-offset_top = 11.903999
-offset_right = 81.56793
-offset_bottom = 11.8029785
+anchor_left = 0.17
+anchor_top = 0.120000005
+anchor_right = 0.83100003
+anchor_bottom = 0.86800003
+offset_left = 0.16000366
+offset_top = 0.23999786
+offset_right = -0.22399902
+offset_bottom = 0.13897705
 script = ExtResource("1_5v8ap")
 
 [node name="ColorRect11" type="ColorRect" parent="."]
