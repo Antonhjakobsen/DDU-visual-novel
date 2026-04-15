@@ -226,6 +226,7 @@ color = Color(0.8492183, 0.8492183, 0.8492183, 1)
 
 [node name="closeSettings" type="Button" parent="."]
 unique_name_in_owner = true
+process_mode = 3
 light_mask = 0
 visibility_layer = 7
 z_index = 5
@@ -289,6 +290,7 @@ theme_override_font_sizes/normal_font_size = 32
 text = " MASTER VOLUME"
 
 [node name="Master volume" type="HSlider" parent="PanelContainer1/Volume"]
+unique_name_in_owner = true
 light_mask = 4
 visibility_layer = 4
 layout_mode = 1
@@ -334,6 +336,7 @@ theme_override_font_sizes/normal_font_size = 32
 text = " MUSIC VOLUME"
 
 [node name="Music volume" type="HSlider" parent="PanelContainer2/Volume"]
+unique_name_in_owner = true
 light_mask = 4
 visibility_layer = 4
 layout_mode = 1
@@ -379,6 +382,7 @@ theme_override_font_sizes/normal_font_size = 32
 text = " SFX VOLUME"
 
 [node name="SFX volume" type="HSlider" parent="PanelContainer3/Volume"]
+unique_name_in_owner = true
 light_mask = 4
 visibility_layer = 4
 layout_mode = 1
@@ -424,6 +428,7 @@ theme_override_font_sizes/normal_font_size = 32
 text = " text.speed"
 
 [node name="Text speed" type="HSlider" parent="PanelContainer4/Volume"]
+unique_name_in_owner = true
 light_mask = 4
 visibility_layer = 4
 layout_mode = 1

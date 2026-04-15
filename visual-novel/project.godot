@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 
 TextSpeed="*res://text_speed.gd"
 Options="*res://options.gd"
+VarOverlay="*res://varOverlay.gd"
 
 [display]
 

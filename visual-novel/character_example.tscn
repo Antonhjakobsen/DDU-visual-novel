@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://m35kvadloyty"]
+[gd_scene load_steps=5 format=3 uid="uid://m35kvadloyty"]
 
+[ext_resource type="Texture2D" uid="uid://cpk0jgwxxs3x8" path="res://icon.svg" id="1_0yv6k"]
 [ext_resource type="Texture2D" uid="uid://cxsf0cy1slhc6" path="res://sprites/Test character.png" id="1_jqnm4"]
 [ext_resource type="Script" uid="uid://d4el5njrjlkyb" path="res://character_example.gd" id="2_jqnm4"]
 [ext_resource type="PackedScene" uid="uid://dr7po7w2pws6p" path="res://dialog_box.tscn" id="3_xxhdl"]
@@ -20,4 +21,7 @@ expand_mode = 5
 stretch_mode = 4
 script = ExtResource("2_jqnm4")
 dialog_box = ExtResource("3_xxhdl")
-default_sprite = ExtResource("1_jqnm4")
+default_sprite = ExtResource("1_0yv6k")
+tagged_sprite = Dictionary[String, Texture2D]({
+"switch": ExtResource("1_jqnm4")
+})

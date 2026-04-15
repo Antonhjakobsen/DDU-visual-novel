@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://glhaas51exia"]
+
+[ext_resource type="Script" uid="uid://d4el5njrjlkyb" path="res://character_example.gd" id="2_5uje2"]
+[ext_resource type="PackedScene" uid="uid://dr7po7w2pws6p" path="res://dialog_box.tscn" id="3_f5sx0"]
+[ext_resource type="Texture2D" uid="uid://cpk0jgwxxs3x8" path="res://icon.svg" id="4_5uje2"]
+
+[node name="character_example3" type="TextureRect"]
+visibility_layer = 2
+anchors_preset = -1
+anchor_left = 0.69200003
+anchor_top = 0.068
+anchor_right = 0.836
+anchor_bottom = 0.324
+offset_left = -0.184021
+offset_top = -0.06400299
+offset_right = -0.072021484
+offset_bottom = 0.04800415
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_5uje2")
+expand_mode = 5
+stretch_mode = 4
+script = ExtResource("2_5uje2")
+dialog_box = ExtResource("3_f5sx0")
+default_sprite = ExtResource("4_5uje2")
