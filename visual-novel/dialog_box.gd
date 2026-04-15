@@ -55,7 +55,12 @@ func reset_text():
 		tween.stop()
 	tween = get_tree().create_tween()
 	@warning_ignore("integer_division")
-	tween.tween_property(%Dialogbox, "visible_ratio", 1, ((dialog.length()/30)*TextSpeed.text_speed) +0.5).set_trans(Tween.TRANS_LINEAR)
+	
+	var dialogTextSpeed=(dialog.length()/30.0+0.5)*TextSpeed.text_speed
+	print(TextSpeed.text_speed)
+	print("dialogtextspeed:")
+	print(dialogTextSpeed)
+	tween.tween_property(%Dialogbox, "visible_ratio", 1, (dialogTextSpeed)).set_trans(Tween.TRANS_LINEAR)
 	await tween.finished
 	tween=null
 	#self_destruct() ???? måske

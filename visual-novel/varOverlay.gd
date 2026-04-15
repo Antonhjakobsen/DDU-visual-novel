@@ -8,8 +8,3 @@ func showMe()->void:
 		overlay.show()
 	else:
 		print("error")
-
-func hideMe()->void:
-	print("hide")
-	overlay.hide()
-	get_tree().paused=false
