@@ -76,7 +76,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Save game" type="Button" parent="ColorRect4" unique_id=311553488]
+[node name="Save file" type="Button" parent="ColorRect4" unique_id=311553488]
 unique_name_in_owner = true
 z_index = 1
 layout_mode = 1
@@ -85,7 +85,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_wwh61")
-text = "SAVE GAME"
+text = "SAVE FILE"
 
 [node name="ColorRect3" type="ColorRect" parent="." unique_id=909575030]
 layout_mode = 1
@@ -141,6 +141,6 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_1tpuw")
 text = "MAIN MENU"
 
 [connection signal="button_down" from="ColorRect/Resume" to="." method="_on_resume_button_down"]
-[connection signal="button_down" from="ColorRect4/Save game" to="." method="_on_save_game_button_down"]
+[connection signal="button_down" from="ColorRect4/Save file" to="." method="_on_save_file_button_down"]
 [connection signal="button_down" from="ColorRect3/Settings" to="." method="_on_settings_button_down"]
 [connection signal="button_down" from="ColorRect2/Main menu" to="." method="_on_main_menu_button_down"]

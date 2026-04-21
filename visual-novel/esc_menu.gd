@@ -9,7 +9,7 @@ func _on_resume_button_down() -> void:
 	queue_free()
 	pass # Replace with function body.
 
-func _on_save_game_button_down() -> void:
+func _on_save_file_button_down() -> void:
 	get_tree().paused=false
 	queue_free()
 	pass # Replace with function body.

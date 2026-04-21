@@ -3,6 +3,16 @@
 [ext_resource type="Script" uid="uid://dl3ixs730ctqx" path="res://options.gd" id="1_5v8ap"]
 [ext_resource type="Script" uid="uid://ccggym7a2wy0e" path="res://text_speed.gd" id="2_se8ut"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_se8ut"]
+draw_center = false
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_07a1d"]
+bg_color = Color(0, 0, 0, 0.0627451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ao2gm"]
+bg_color = Color(0.6, 0.6, 0.6, 0.10980392)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3pqo"]
 bg_color = Color(0.07058824, 0.07058824, 0.07058824, 1)
 
@@ -156,6 +166,7 @@ offset_bottom = 0.069690704
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8492183, 0.8492183, 0.8492183, 1)
+metadata/_edit_group_ = true
 
 [node name="ColorRect6" type="ColorRect" parent="." unique_id=289191777]
 light_mask = 0
@@ -173,6 +184,7 @@ offset_bottom = 0.016204834
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8492183, 0.8492183, 0.8492183, 1)
+metadata/_edit_group_ = true
 
 [node name="ColorRect7" type="ColorRect" parent="." unique_id=1702559792]
 light_mask = 0
@@ -190,6 +202,7 @@ offset_bottom = 0.016204834
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8492183, 0.8492183, 0.8492183, 1)
+metadata/_edit_group_ = true
 
 [node name="ColorRect8" type="ColorRect" parent="." unique_id=1631459751]
 light_mask = 0
@@ -207,6 +220,7 @@ offset_bottom = 0.069690704
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8492183, 0.8492183, 0.8492183, 1)
+metadata/_edit_group_ = true
 
 [node name="ColorRect9" type="ColorRect" parent="." unique_id=834488644]
 light_mask = 0
@@ -224,6 +238,7 @@ offset_bottom = -0.19935417
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8492183, 0.8492183, 0.8492183, 1)
+metadata/_edit_group_ = true
 
 [node name="closeSettings" type="Button" parent="." unique_id=829113241]
 unique_name_in_owner = true
@@ -241,6 +256,9 @@ offset_top = -1.0
 offset_bottom = -0.09887314
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_se8ut")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_07a1d")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ao2gm")
 
 [node name="Label2" type="Label" parent="." unique_id=1772349648]
 layout_mode = 1

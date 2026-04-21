@@ -25,6 +25,7 @@ TextSpeed="*res://text_speed.gd"
 Options="*res://options.gd"
 VarOverlay="*res://varOverlay.gd"
 EscMenu="*uid://2q0hk61jw2k6"
+Files="*uid://bs22ssm465ob8"
 
 [display]
 

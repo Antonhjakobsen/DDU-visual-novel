@@ -41,3 +41,6 @@ func wait(seconds:float) -> Signal:
 
 func _on_settings_button_down() -> void:
 	VarOverlay.showMe()
+
+func _on_save_button_down() -> void:
+	VarOverlay.showMeLogs()

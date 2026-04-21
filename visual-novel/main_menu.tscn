@@ -1,17 +1,33 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2khjacbs6auf"]
+[gd_scene format=3 uid="uid://d2khjacbs6auf"]
 
 [ext_resource type="Script" uid="uid://bivy5ck6kyvwq" path="res://button_manager_1.gd" id="1_06t4h"]
 
-[node name="Button manager1" type="Control"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(0.10980392, 0.10980392, 0.10980392, 1)
+
+[node name="Button manager1" type="Control" unique_id=1913187818]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_06t4h")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1427921064]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.44200003
+anchor_bottom = 1.0
+offset_right = -0.184021
+color = Color(0, 0, 0, 0.70980394)
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1983753800]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.08800001
@@ -23,12 +39,14 @@ offset_top = -0.085998535
 offset_right = -1.6799927
 offset_bottom = -0.75601196
 
-[node name="start" type="Button" parent="PanelContainer"]
+[node name="start" type="Button" parent="PanelContainer" unique_id=732347172]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
 text = "Start"
 
-[node name="PanelContainer2" type="PanelContainer" parent="."]
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1811311729]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.08800001
@@ -40,12 +58,14 @@ offset_top = -0.1960144
 offset_right = -0.52801514
 offset_bottom = -0.22003174
 
-[node name="options" type="Button" parent="PanelContainer2"]
+[node name="options" type="Button" parent="PanelContainer2" unique_id=90976080]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
 text = "Options"
 
-[node name="PanelContainer3" type="PanelContainer" parent="."]
+[node name="PanelContainer3" type="PanelContainer" parent="." unique_id=1559433757]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.08800001
@@ -57,9 +77,11 @@ offset_top = -0.30603027
 offset_right = -0.52801514
 offset_bottom = 0.315979
 
-[node name="quit" type="Button" parent="PanelContainer3"]
+[node name="quit" type="Button" parent="PanelContainer3" unique_id=1316436122]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
 text = "Quit"
 
 [connection signal="pressed" from="PanelContainer/start" to="." method="_on_start_pressed"]

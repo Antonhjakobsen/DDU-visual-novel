@@ -19,3 +19,15 @@ func showMeEsc()->void:
 		overlayEsc.show()
 	else:
 		print("error")
+
+var overlayLogs
+
+func showMeLogs()->void:
+	overlayLogs=preload("res://files.tscn").instantiate()
+	if (is_instance_valid(overlayLogs)):
+		print("valid")
+		get_tree().root.add_child(overlayLogs)
+		overlayLogs.show()
+	else:
+		print("error")
+	pass
