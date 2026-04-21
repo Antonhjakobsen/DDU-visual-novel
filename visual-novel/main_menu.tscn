@@ -84,6 +84,16 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
 text = "Quit"
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=466262741]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.44200003
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.184021
+grow_horizontal = 2
+grow_vertical = 2
+
 [connection signal="pressed" from="PanelContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="PanelContainer2/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="PanelContainer3/quit" to="." method="_on_quit_pressed"]
