@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://c8yr0ibx11dmy"]
+
+[ext_resource type="Script" uid="uid://2q0hk61jw2k6" path="res://esc_menu.gd" id="1_1tpuw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ee7bu"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwh61"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tne67"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfsp3"]
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1tpuw"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="MenuBar" type="MenuBar" unique_id=603454941]
+anchors_preset = -1
+anchor_left = 0.41700003
+anchor_top = 0.19800001
+anchor_right = 0.583
+anchor_bottom = 0.49400002
+offset_left = -0.3840332
+offset_top = -0.3040161
+offset_right = 0.38397217
+offset_bottom = -0.11199951
+script = ExtResource("1_1tpuw")
+
+[node name="ColorRect11" type="ColorRect" parent="." unique_id=1481409883]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.5
+anchor_top = -0.66700006
+anchor_right = 3.5000002
+anchor_bottom = 2.7080002
+offset_top = 0.06401062
+offset_right = -6.1035156e-05
+offset_bottom = 0.063964844
+color = Color(0, 0, 0, 0.54901963)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1807074392]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.021000002
+anchor_right = 1.0
+anchor_bottom = 0.22900002
+offset_top = -0.03200054
+offset_bottom = 0.03199768
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Resume" type="Button" parent="ColorRect" unique_id=53941876]
+unique_name_in_owner = true
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_ee7bu")
+text = "RESUME"
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=2003981493]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.27100003
+anchor_right = 1.0
+anchor_bottom = 0.47900003
+offset_top = -0.03200531
+offset_bottom = 0.03199768
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Save game" type="Button" parent="ColorRect4" unique_id=311553488]
+unique_name_in_owner = true
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_wwh61")
+text = "SAVE GAME"
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=909575030]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.521
+anchor_right = 1.0
+anchor_bottom = 0.72900003
+offset_top = -0.03200531
+offset_bottom = 0.03199768
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Settings" type="Button" parent="ColorRect3" unique_id=562480835]
+unique_name_in_owner = true
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_tne67")
+text = "SETTINGS"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1132773162]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.76600003
+anchor_right = 1.0
+anchor_bottom = 0.97400004
+offset_top = -0.072006226
+offset_bottom = -0.008010864
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Main menu" type="Button" parent="ColorRect2" unique_id=254966051]
+unique_name_in_owner = true
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cfsp3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1tpuw")
+text = "MAIN MENU"
+
+[connection signal="button_down" from="ColorRect/Resume" to="." method="_on_resume_button_down"]
+[connection signal="button_down" from="ColorRect4/Save game" to="." method="_on_save_game_button_down"]
+[connection signal="button_down" from="ColorRect3/Settings" to="." method="_on_settings_button_down"]
+[connection signal="button_down" from="ColorRect2/Main menu" to="." method="_on_main_menu_button_down"]

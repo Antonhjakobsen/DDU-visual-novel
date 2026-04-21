@@ -26,7 +26,7 @@ func load_settings()->void:
 
 func set_slider_value()->void:
 	if(%"Master volume"==null):
-		print("(set_slider) null error")
+		print("(set_slider) null error, kan ignoreres")
 	else:
 		%"Master volume".value=config.get_value("MasterVolume","master_volume",1)
 		%"Music volume".value=config.get_value("MusicVolume","music_volume",1)

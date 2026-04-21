@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ccggym7a2wy0e" path="res://text_speed.gd" id="2_se8ut"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3pqo"]
-bg_color = Color(0.07058824, 0.07058824, 0.07058824, 1)
+bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_g3pqo"]
 
@@ -75,19 +75,18 @@ offset_left = 0.36071777
 offset_top = 0.021087646
 offset_right = 0.83447266
 offset_bottom = 0.106933594
-color = Color(0, 0, 0, 0.54901963)
+color = Color(0, 0, 0, 0.6117647)
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1034955363]
 light_mask = 0
 layout_mode = 1
 anchors_preset = -1
-anchor_top = -0.002
 anchor_right = 1.0
-anchor_bottom = 1.003
+anchor_bottom = 1.001
 offset_left = -1.3909454
-offset_top = -0.030794024
+offset_top = -1.0
 offset_right = -0.068603516
-offset_bottom = -0.056793213
+offset_bottom = 0.91241455
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.00015502091, 0.00010810564, 6.0271705e-05, 1)
@@ -105,7 +104,7 @@ offset_right = -0.15551758
 offset_bottom = -0.08758545
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.10980392, 0.10980392, 0.10980392, 1)
+color = Color(0.09302468, 0.09302468, 0.09302468, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="." unique_id=1148199575]
 light_mask = 0

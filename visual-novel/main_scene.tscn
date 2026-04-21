@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7arq43ejhy33"]
+[gd_scene format=3 uid="uid://b7arq43ejhy33"]
 
 [ext_resource type="Script" uid="uid://dqqfj2g64o3x7" path="res://main_scene.gd" id="1_0f027"]
 [ext_resource type="Texture2D" uid="uid://l6m6cs0r3i7y" path="res://backgrounds/Rooftop.jpg" id="2_2c62f"]
 
-[node name="SetDressing" type="Control"]
+[node name="SetDressing" type="Control" unique_id=1651370572]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0f027")
 
-[node name="left" type="ReferenceRect" parent="."]
+[node name="left" type="ReferenceRect" parent="." unique_id=1604843189]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -24,7 +24,7 @@ offset_top = 0.031982422
 offset_right = -0.32808304
 offset_bottom = -0.14401245
 
-[node name="right" type="ReferenceRect" parent="."]
+[node name="right" type="ReferenceRect" parent="." unique_id=843112716]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -37,7 +37,7 @@ offset_top = 0.031982422
 offset_right = 0.45593262
 offset_bottom = -0.14401245
 
-[node name="rightishUp2" type="ReferenceRect" parent="."]
+[node name="rightishUp2" type="ReferenceRect" parent="." unique_id=1927363505]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -50,7 +50,7 @@ offset_top = 18.70398
 offset_right = 18.919922
 offset_bottom = 18.527985
 
-[node name="caCenter" type="ReferenceRect" parent="."]
+[node name="caCenter" type="ReferenceRect" parent="." unique_id=1402141022]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -63,7 +63,7 @@ offset_top = -0.08000183
 offset_right = -0.2800293
 offset_bottom = -0.25601196
 
-[node name="leftish" type="ReferenceRect" parent="."]
+[node name="leftish" type="ReferenceRect" parent="." unique_id=1018920729]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -76,7 +76,7 @@ offset_top = 0.031982422
 offset_right = -0.12799072
 offset_bottom = -0.14401245
 
-[node name="rightishUp" type="ReferenceRect" parent="."]
+[node name="rightishUp" type="ReferenceRect" parent="." unique_id=819256005]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -89,7 +89,7 @@ offset_top = -1.5258789e-05
 offset_right = 0.52789307
 offset_bottom = -0.17602539
 
-[node name="rightish" type="ReferenceRect" parent="."]
+[node name="rightish" type="ReferenceRect" parent="." unique_id=143125582]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -102,7 +102,7 @@ offset_top = 0.031982422
 offset_right = -0.1920166
 offset_bottom = -0.14401245
 
-[node name="far_left" type="ReferenceRect" parent="."]
+[node name="far_left" type="ReferenceRect" parent="." unique_id=571621535]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -115,7 +115,7 @@ offset_top = 0.031982422
 offset_right = -0.44799805
 offset_bottom = -0.14401245
 
-[node name="far_rightUp" type="ReferenceRect" parent="."]
+[node name="far_rightUp" type="ReferenceRect" parent="." unique_id=745828967]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -128,7 +128,7 @@ offset_top = 0.09600067
 offset_right = 0.13598633
 offset_bottom = 4.719986
 
-[node name="far_right" type="ReferenceRect" parent="."]
+[node name="far_right" type="ReferenceRect" parent="." unique_id=1687599291]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -140,7 +140,7 @@ offset_top = 0.031982422
 offset_right = -0.32006836
 offset_bottom = -0.14401245
 
-[node name="background" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="." unique_id=689576263]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -151,20 +151,58 @@ grow_vertical = 2
 texture = ExtResource("2_2c62f")
 stretch_mode = 5
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1982994225]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.88500005
-anchor_top = 0.022
-anchor_right = 0.97300005
-anchor_bottom = 0.091000006
-offset_left = 7.4799194
-offset_top = 3.0959978
-offset_right = 8.104004
-offset_bottom = 3.0319977
+anchor_left = 0.734
+anchor_top = 0.019000001
+anchor_right = 0.85400003
+anchor_bottom = 0.08800001
+offset_left = 0.32183838
+offset_top = -0.07169533
+offset_right = 0.081848145
+offset_bottom = -0.13569641
 color = Color(0, 0, 0, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=250303121]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 32
+text = "Skip"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Skip" type="Button" parent="ColorRect2/RichTextLabel" unique_id=40212400]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(0, 0, 0, 0.8)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+clip_text = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2032125049]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.86500007
+anchor_top = 0.019000001
+anchor_right = 0.9850001
+anchor_bottom = 0.08800001
+offset_left = 0.51989746
+offset_top = 0.039996147
+offset_right = 0.27990723
+offset_bottom = -0.02400589
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=2058231997]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -177,7 +215,7 @@ scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Settings" type="Button" parent="ColorRect/RichTextLabel"]
+[node name="Settings" type="Button" parent="ColorRect/RichTextLabel" unique_id=773773028]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(0, 0, 0, 0.8)
@@ -189,18 +227,20 @@ offset_top = 1.0
 offset_bottom = 1.0
 clip_text = true
 
-[node name="Line2D2" type="Line2D" parent="."]
+[node name="Line2D2" type="Line2D" parent="." unique_id=200640296]
 z_index = 5
 position = Vector2(25, 637.5)
-points = PackedVector2Array(-5, -620.5, -4, -4.5, 1111, -5)
+points = PackedVector2Array(-5, -620.5, -5, -4.5, 1111, -5)
 width = 6.0
 default_color = Color(0.77254903, 0.78431374, 1, 0.5882353)
+metadata/_edit_group_ = true
 
-[node name="Line2D" type="Line2D" parent="."]
+[node name="Line2D" type="Line2D" parent="." unique_id=851821626]
 z_index = 5
 position = Vector2(21, 19)
-points = PackedVector2Array(-4, -5, 1111, -4.5, 1112, 610.5)
+points = PackedVector2Array(-4, -5, 1113, -5, 1112, 610.5)
 width = 6.0
 default_color = Color(0.77254903, 0.78431374, 1, 0.5882353)
+metadata/_edit_group_ = true
 
 [connection signal="button_down" from="ColorRect/RichTextLabel/Settings" to="." method="_on_settings_button_down"]

@@ -8,3 +8,14 @@ func showMe()->void:
 		overlay.show()
 	else:
 		print("error")
+
+var overlayEsc
+
+func showMeEsc()->void:
+	overlayEsc = preload("res://escMenu.tscn").instantiate()
+	if (is_instance_valid(overlayEsc)):
+		print("valid")
+		get_tree().root.add_child(overlayEsc)
+		overlayEsc.show()
+	else:
+		print("error")
