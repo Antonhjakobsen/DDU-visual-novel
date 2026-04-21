@@ -7,7 +7,7 @@ const CHARA3 = preload("res://character_example_3.tscn")
 func _ready() -> void:
 	var o:VNCharacter=CHARA1.instantiate()
 	var b:VNCharacter=CHARA2.instantiate()
-	var u:VNCharacter=CHARA2.instantiate()
+	var u:VNCharacter=CHARA3.instantiate()
 	add_child(o)
 	add_child(b)
 	add_child(u)

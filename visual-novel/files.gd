@@ -4,6 +4,9 @@ var config1 = ConfigFile.new()
 var config2 = ConfigFile.new()
 var config3 = ConfigFile.new()
 
+func path1Do():
+	pass
+
 func _on_close_saves_pressed() -> void:
 	print("hideMeRun")
 	path1=false
