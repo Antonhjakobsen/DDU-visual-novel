@@ -20,13 +20,13 @@ func showMeEsc()->void:
 	else:
 		print("error")
 
-var overlayLogs
+var overlaySaves
 
-func showMeLogs()->void:
-	overlayLogs=preload("res://files.tscn").instantiate()
-	if (is_instance_valid(overlayLogs)):
+func showMeSaves()->void:
+	overlaySaves=preload("res://files.tscn").instantiate()
+	if (is_instance_valid(overlaySaves)):
 		print("valid")
-		get_tree().root.add_child(overlayLogs)
-		overlayLogs.show()
+		get_tree().root.add_child(overlaySaves)
+		overlaySaves.show()
 	else:
 		print("error")
