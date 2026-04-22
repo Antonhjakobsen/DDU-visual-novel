@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cxl1ruwqmbdtc"]
 
-[node name="MenuBar" type="MenuBar" unique_id=159364071]
+[ext_resource type="Script" uid="uid://ce1f15f1hif2f" path="res://choice.gd" id="1_0cj1k"]
+
+[node name="Path1" type="MenuBar" unique_id=159364071]
 anchors_preset = -1
 anchor_left = 0.354
 anchor_top = 0.09900001
@@ -14,15 +16,18 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+script = ExtResource("1_0cj1k")
 
-[node name="Choice 1" type="Button" parent="." unique_id=1552182757]
+[node name="true" type="Button" parent="." unique_id=1552182757]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.296
 offset_bottom = 0.13600159
+theme_override_font_sizes/font_size = 48
+text = "True"
 
-[node name="Choice 2" type="Button" parent="." unique_id=321419401]
+[node name="false" type="Button" parent="." unique_id=321419401]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.689
@@ -30,3 +35,8 @@ anchor_right = 1.0
 anchor_bottom = 0.9850001
 offset_top = 1.8739929
 offset_bottom = 5.039978
+theme_override_font_sizes/font_size = 48
+text = "False"
+
+[connection signal="button_up" from="true" to="." method="_on_true_button_up"]
+[connection signal="button_up" from="false" to="." method="_on_false_button_up"]
