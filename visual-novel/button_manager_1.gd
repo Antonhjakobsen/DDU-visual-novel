@@ -2,7 +2,7 @@ extends Control
 var overlay = preload("res://options.tscn").instantiate()
 
 func _on_options_pressed() -> void:
-	VarOverlay.showMe()
+	VarOverlay.showMeSettings()
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()

@@ -9,7 +9,6 @@ func path1Do():
 
 func _on_close_saves_pressed() -> void:
 	print("hideMeRun")
-	path1=false
 	get_tree().paused=false
 	queue_free()
 

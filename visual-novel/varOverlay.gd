@@ -1,6 +1,6 @@
 extends Node
 var overlay
-func showMe()->void:
+func showMeSettings()->void:
 	overlay = preload("res://options.tscn").instantiate()
 	if (is_instance_valid(overlay)):
 		print("valid")
@@ -30,4 +30,3 @@ func showMeLogs()->void:
 		overlayLogs.show()
 	else:
 		print("error")
-	pass

@@ -40,7 +40,18 @@ func wait(seconds:float) -> Signal:
 	return get_tree().create_timer(seconds).timeout
 
 func _on_settings_button_down() -> void:
-	VarOverlay.showMe()
+	VarOverlay.showMeSettings()
 
 func _on_save_button_down() -> void:
 	VarOverlay.showMeLogs()
+
+func _input(event)->void:
+	if event.is_action_pressed("escPressed"):
+		if GlobalVar.escOpen==false:
+			print(GlobalVar.escOpen)
+			print("opening escMenu")
+			VarOverlay.showMeEsc()
+			GlobalVar.escOpen=true
+		elif GlobalVar.escOpen and GlobalVar.openRelease:
+				VarOverlay.overlayEsc.queue_free()
+				GlobalVar.escOpen=false
