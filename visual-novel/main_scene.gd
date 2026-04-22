@@ -43,7 +43,7 @@ func _on_settings_button_down() -> void:
 	VarOverlay.showMeSettings()
 
 func _on_save_button_down() -> void:
-	VarOverlay.showMeLogs()
+	VarOverlay.showMeSaves()
 
 func _input(event)->void:
 	if event.is_action_pressed("escPressed"):
@@ -55,3 +55,7 @@ func _input(event)->void:
 		elif GlobalVar.escOpen and GlobalVar.openRelease:
 				VarOverlay.overlayEsc.queue_free()
 				GlobalVar.escOpen=false
+
+
+func _on_skip_button_down() -> void:
+	pass # Replace with function body.
