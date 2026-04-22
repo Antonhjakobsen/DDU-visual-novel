@@ -142,6 +142,7 @@ offset_bottom = -0.14401245
 
 [node name="background" type="TextureRect" parent="." unique_id=689576263]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -321,5 +322,6 @@ default_color = Color(0.77254903, 0.78431374, 1, 0.5882353)
 metadata/_edit_group_ = true
 
 [connection signal="button_down" from="save/RichTextLabel/Save" to="." method="_on_save_button_down"]
+[connection signal="button_down" from="skip/RichTextLabel/Skip" to="." method="_on_skip_button_down"]
 [connection signal="button_down" from="logs/RichTextLabel/Logs" to="." method="_on_logs_button_down"]
 [connection signal="button_down" from="settings/RichTextLabel/Settings" to="." method="_on_settings_button_down"]
