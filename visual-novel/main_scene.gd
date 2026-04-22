@@ -74,7 +74,7 @@ func _ready() -> void:
 	await o.say("Sentry","\"Uh It's you!\"")
 	await o.say("Sentry","\"From last year.\"")
 	await o.say("Sentry","\"No not last year-\"")
-	await o.say("Self","Last year I would still have been in middle school. It’s been a while since then, we didn’t know each other exactly.")
+	await o.say("Self","Last year I would still have been in middle school. \n  It’s been a while since then, we didn’t know each other exactly.")
 	await o.say("Self","")
 	await o.say("Sentry","\"\"")
 	await o.say("Self","\"\"")
