@@ -54,27 +54,29 @@ offset_bottom = -0.14401245
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.48200002
-anchor_top = 0.49500003
-anchor_right = 0.51600003
-anchor_bottom = 0.55700004
-offset_left = -0.3441162
-offset_top = -0.088012695
-offset_right = 0.48791504
-offset_bottom = -0.2640381
+anchor_left = 0.606
+anchor_top = 0.33600003
+anchor_right = 0.64100003
+anchor_bottom = 0.39800003
+offset_left = -0.11199951
+offset_top = 0.27198792
+offset_right = -0.43200684
+offset_bottom = 0.09597778
 
-[node name="caCenter" type="ReferenceRect" parent="." unique_id=1402141022]
+[node name="centerUp" type="ReferenceRect" parent="." unique_id=1402141022]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.23
-anchor_top = 0.335
-anchor_right = 0.26500002
-anchor_bottom = 0.397
-offset_left = 0.040008545
-offset_top = -0.08000183
-offset_right = -0.2800293
-offset_bottom = -0.25601196
+anchor_left = 0.48100004
+anchor_top = 0.316
+anchor_right = 0.51900005
+anchor_bottom = 0.38700002
+offset_left = -0.11206055
+offset_top = 0.23199463
+offset_right = 0.11193848
+offset_bottom = 0.22398376
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="leftish" type="ReferenceRect" parent="." unique_id=1018920729]
 unique_name_in_owner = true
@@ -333,6 +335,19 @@ anchor_bottom = 0.25
 offset_left = -0.12802124
 offset_top = 0.17599487
 offset_right = -0.4480133
+
+[node name="leftishDownLeft" type="ReferenceRect" parent="." unique_id=1194998557]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.104
+anchor_top = 0.546
+anchor_right = 0.13900001
+anchor_bottom = 0.60800004
+offset_left = 0.19200134
+offset_top = 0.19198608
+offset_right = -0.12802124
+offset_bottom = 0.015960693
 
 [connection signal="button_down" from="save/RichTextLabel/Save" to="." method="_on_save_button_down"]
 [connection signal="button_down" from="skip/RichTextLabel/Skip" to="." method="_on_skip_button_down"]
