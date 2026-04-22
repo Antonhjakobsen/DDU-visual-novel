@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l6m6cs0r3i7y"
-path="res://.godot/imported/Rooftop.jpg-10a352513d1580cc3eca5ee251f594f7.ctex"
+uid="uid://df84c3kby1jba"
+path="res://.godot/imported/HallwayLeftToRight.png-7628f0a03c3b631dd81daefcf04ae4d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Rooftop.jpg"
-dest_files=["res://.godot/imported/Rooftop.jpg-10a352513d1580cc3eca5ee251f594f7.ctex"]
+source_file="res://backgrounds/HallwayLeftToRight.png"
+dest_files=["res://.godot/imported/HallwayLeftToRight.png-7628f0a03c3b631dd81daefcf04ae4d2.ctex"]
 
 [params]
 
