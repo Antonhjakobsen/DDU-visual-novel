@@ -50,7 +50,7 @@ func _ready() -> void:
 	await o.say("Self","Luckily no one's seen me out here yet. \n  The worst thing that could happen right now is-")
 	await o.move(%leftishUpleftUp,0.5)
 	await o.move(%leftish,0.5)
-	await o.say("Sen","CRAP I’M GONNA BE LATE!!!")
+	await o.say("Sen","\"CRAP I’M GONNA BE LATE!!!\"")
 	await o.say("Self","Then, like clockwork I run into an old friend, \n  the one thing I was trying to avoid.")
 	await o.say("Self","He’s running through the halls like a complete lunatic, \n  almost running straight into me.")
 	await o.say("","")
