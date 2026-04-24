@@ -38,15 +38,42 @@ func advance():
 		print("Killing")
 		self_destruct()
 
+func advanceXTimes():
+	print(GlobalVar.dialogSkips)
+	print(GlobalVar.dialogSkipped)
+	if tween and GlobalVar.dialogSkips!=GlobalVar.dialogSkipped:
+		print("Stop tween")
+		tween.stop()
+		tween=null
+		GlobalVar.dialogSkipped=GlobalVar.dialogSkipped+1
+		self_destruct()
+	elif GlobalVar.dialogSkips!=GlobalVar.dialogSkipped:
+		print("Killing x Times")
+		GlobalVar.dialogSkipped=GlobalVar.dialogSkipped+1
+		print(tween)
+		self_destruct()
+	else:
+		GlobalVar.loadNow=false
+		reset_text()
+
 func self_destruct():
 	get_parent().remove_child(self)
 	complete.emit()
+	print("selfDestruct")
 	queue_free()
+	print("selfDestructed")
 
 func _ready() -> void:
+	#if GlobalVar.loadNow==true:
+		#print("loadNow?:")
+		#print(GlobalVar.loadNow)
+		#reset_text()
+		#advanceXTimes()
+	#else:
 	reset_text()
 
 func reset_text():
+	print("resetText")
 	if ! is_node_ready():
 		return
 	%Dialogbox.text=" "+charName+" \n  " + dialog
@@ -57,13 +84,24 @@ func reset_text():
 	@warning_ignore("integer_division")
 	
 	var dialogTextSpeed=(dialog.length()/30.0+0.5)*TextSpeed.text_speed
-	print(TextSpeed.text_speed)
-	print("dialogtextspeed:")
-	print(dialogTextSpeed)
+	if GlobalVar.loadNow==true and GlobalVar.dialogSkipped!=GlobalVar.dialogSkips:
+		Engine.time_scale=100
+	#print(TextSpeed.text_speed)
+	#print("dialogtextspeed:")
+	#print(dialogTextSpeed)
 	tween.tween_property(%Dialogbox, "visible_ratio", 1, (dialogTextSpeed)).set_trans(Tween.TRANS_LINEAR)
 	await tween.finished
 	tween=null
-	#self_destruct() ???? måske
+	if GlobalVar.loadNow==true and GlobalVar.dialogSkipped!=GlobalVar.dialogSkips:
+		Engine.time_scale=100
+		GlobalVar.dialogSkipped=GlobalVar.dialogSkipped+1
+		print(GlobalVar.dialogSkips)
+		print(GlobalVar.dialogSkipped)
+		self_destruct()
+	else:
+		GlobalVar.loadNow=false
+		GlobalVar.dialogSkips=GlobalVar.dialogSkips+1
+		Engine.time_scale=1
 
 func _on_texture_button_pressed():
 	print("Manual skip")

@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dr7po7w2pws6p"]
+[gd_scene format=3 uid="uid://dr7po7w2pws6p"]
 
 [ext_resource type="Script" uid="uid://oxaolyk3hnyj" path="res://dialog_box.gd" id="1_hwgul"]
 
-[node name="Panel" type="Panel"]
+[node name="Panel" type="Panel" unique_id=616532957]
 anchors_preset = -1
 anchor_left = 0.148
 anchor_top = 0.67300004
@@ -14,7 +14,7 @@ offset_right = 0.7999878
 offset_bottom = 15.639954
 script = ExtResource("1_hwgul")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1729339443]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.98800004
@@ -25,7 +25,7 @@ offset_right = 13.695984
 offset_bottom = -1.9160156
 color = Color(0, 0, 0, 1)
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=803343639]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.998
@@ -33,13 +33,13 @@ anchor_bottom = 0.994
 offset_right = -0.09802246
 offset_bottom = 0.055999756
 
-[node name="Dialogbox" type="RichTextLabel" parent="PanelContainer"]
+[node name="Dialogbox" type="RichTextLabel" parent="PanelContainer" unique_id=749323943]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 40
 text = "lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... lorem ipsum... "
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1342417022]
 unique_name_in_owner = true
 light_mask = 0
 visibility_layer = 0
