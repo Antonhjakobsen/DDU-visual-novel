@@ -83,7 +83,7 @@ func reset_text():
 	tween = get_tree().create_tween()
 	@warning_ignore("integer_division")
 	
-	var dialogTextSpeed=(dialog.length()/30.0+0.5)*TextSpeed.text_speed
+	var dialogTextSpeed=(dialog.length()/30.0+0.5)/TextSpeed.text_speed
 	if GlobalVar.loadNow==true and GlobalVar.dialogSkipped!=GlobalVar.dialogSkips:
 		Engine.time_scale=100
 	#print(TextSpeed.text_speed)
