@@ -34,10 +34,11 @@ func showMeSaves()->void:
 var overlayPath
 
 func showMePaths()->void:
-	overlaySaves=preload("res://choice.tscn").instantiate()
+	overlayPath=preload("res://choice.tscn").instantiate()
 	if (is_instance_valid(overlayPath)):
 		print("valid")
 		get_tree().root.add_child(overlayPath)
-		overlaySaves.show()
+		overlayPath.show()
+		print("pathShow")
 	else:
 		print("error")

@@ -36,6 +36,7 @@ func _ready() -> void:
 	transition1.tween_property(%background, "modulate:a", 0, 0)
 	transition1.tween_property(%background, "modulate:a", 1, 2)
 	await o.move(%OOS,2.5)
+	VarOverlay.showMePaths()
 	await o.say("You","It’s only been a few weeks since I’ve started high school.\n  So far high school life has been as dull as I expected. \n  It’s nothing like how it is in manga.")
 	print("sentance 1 complete, signal emit")
 	await o.say("You","I still have to join a club soon,\n  I’ve been waiting it out for a good while now.\n  It’s practically been pushed to the back of my mind.")
