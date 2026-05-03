@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://m35kvadloyty"]
+
+[ext_resource type="Texture2D" uid="uid://bbeyfb3p7ju6l" path="res://sprites/Sen1.png" id="1_cy8tm"]
+[ext_resource type="Script" uid="uid://d4el5njrjlkyb" path="res://character_example.gd" id="2_vx1s4"]
+[ext_resource type="PackedScene" uid="uid://dr7po7w2pws6p" path="res://dialog_box.tscn" id="3_b5voe"]
+[ext_resource type="Texture2D" uid="uid://c1aitx60wt7kx" path="res://sprites/Sen2.png" id="4_77wqm"]
+
+[node name="character_example" type="TextureRect" unique_id=127369076]
+visibility_layer = 2
+anchors_preset = -1
+anchor_right = 0.30400002
+anchor_bottom = 0.85200006
+offset_right = -0.20800781
+offset_bottom = -0.12683105
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cy8tm")
+expand_mode = 5
+stretch_mode = 4
+script = ExtResource("2_vx1s4")
+dialog_box = ExtResource("3_b5voe")
+default_sprite = ExtResource("1_cy8tm")
+tagged_sprite = Dictionary[String, Texture2D]({
+"switch": ExtResource("4_77wqm")
+})

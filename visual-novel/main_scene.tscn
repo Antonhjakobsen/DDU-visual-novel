@@ -22,136 +22,6 @@ grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="left" type="ReferenceRect" parent="." unique_id=1604843189]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.46600002
-anchor_right = 0.036000002
-anchor_bottom = 0.528
-offset_left = 1.1439209
-offset_top = 0.031982422
-offset_right = -0.32808304
-offset_bottom = -0.14401245
-
-[node name="right" type="ReferenceRect" parent="." unique_id=843112716]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.96300006
-anchor_top = 0.46600002
-anchor_right = 0.99700004
-anchor_bottom = 0.528
-offset_left = -0.37609863
-offset_top = 0.031982422
-offset_right = 0.45593262
-offset_bottom = -0.14401245
-
-[node name="rightishUp2" type="ReferenceRect" parent="." unique_id=1927363505]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.606
-anchor_top = 0.33600003
-anchor_right = 0.64100003
-anchor_bottom = 0.39800003
-offset_left = -0.11199951
-offset_top = 0.27198792
-offset_right = -0.43200684
-offset_bottom = 0.09597778
-
-[node name="centerUp" type="ReferenceRect" parent="." unique_id=1402141022]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.48100004
-anchor_top = 0.316
-anchor_right = 0.51900005
-anchor_bottom = 0.38700002
-offset_left = -0.11206055
-offset_top = 0.23199463
-offset_right = 0.11193848
-offset_bottom = 0.22398376
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="leftish" type="ReferenceRect" parent="." unique_id=1018920729]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.3
-anchor_top = 0.33800003
-anchor_right = 0.335
-anchor_bottom = 0.4
-offset_left = 0.3999939
-offset_top = -0.024017334
-offset_right = 0.07998657
-offset_bottom = -0.2000122
-
-[node name="rightishUp" type="ReferenceRect" parent="." unique_id=819256005]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.73600006
-anchor_top = 0.33900002
-anchor_right = 0.77000004
-anchor_bottom = 0.40100002
-offset_left = -0.30413818
-offset_top = -1.5258789e-05
-offset_right = 0.52789307
-offset_bottom = -0.17602539
-
-[node name="rightish" type="ReferenceRect" parent="." unique_id=143125582]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.73600006
-anchor_top = 0.46600002
-anchor_right = 0.771
-anchor_bottom = 0.528
-offset_left = 0.12792969
-offset_top = 0.031982422
-offset_right = -0.1920166
-offset_bottom = -0.14401245
-
-[node name="far_left" type="ReferenceRect" parent="." unique_id=571621535]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.165
-anchor_top = 0.16700001
-anchor_right = -0.13000001
-anchor_bottom = 0.22800002
-offset_left = 0.08000183
-offset_top = -0.21600342
-offset_right = -0.23999023
-offset_bottom = 0.2559967
-
-[node name="far_rightUp" type="ReferenceRect" parent="." unique_id=745828967]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.131
-anchor_top = 0.193
-anchor_right = 1.1570001
-anchor_bottom = 0.23500001
-offset_left = 0.087890625
-offset_top = -0.06400299
-offset_right = 0.13598633
-offset_bottom = 4.719986
-
-[node name="far_right" type="ReferenceRect" parent="." unique_id=1687599291]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.125
-anchor_top = 0.46600002
-anchor_right = 1.1600001
-anchor_bottom = 0.528
-offset_top = 0.031982422
-offset_right = -0.32006836
-offset_bottom = -0.14401245
-
 [node name="save" type="ColorRect" parent="." unique_id=1116796063]
 layout_mode = 1
 anchors_preset = -1
@@ -285,30 +155,538 @@ width = 6.0
 default_color = Color(0.77254903, 0.78431374, 1, 0.5882353)
 metadata/_edit_group_ = true
 
-[node name="leftishUpleftUp" type="ReferenceRect" parent="." unique_id=2022003086]
+[node name="00" type="ReferenceRect" parent="." unique_id=1687599291]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.13900001
-anchor_top = 0.18800001
-anchor_right = 0.17400001
-anchor_bottom = 0.25
-offset_left = -0.12802124
-offset_top = 0.17599487
-offset_right = -0.4480133
+anchor_left = 0.047000002
+anchor_top = 0.096
+anchor_right = 0.082
+anchor_bottom = 0.157
+offset_left = -0.144001
+offset_top = -0.20800018
+offset_right = -0.46400452
+offset_bottom = 0.26399994
 
-[node name="leftishDownLeft" type="ReferenceRect" parent="." unique_id=1194998557]
+[node name="01" type="ReferenceRect" parent="." unique_id=786428159]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.104
-anchor_top = 0.546
-anchor_right = 0.13900001
-anchor_bottom = 0.60800004
-offset_left = 0.19200134
-offset_top = 0.19198608
-offset_right = -0.12802124
-offset_bottom = 0.015960693
+anchor_left = 0.179
+anchor_top = 0.096
+anchor_right = 0.21400002
+anchor_bottom = 0.157
+offset_left = -0.20800781
+offset_top = -0.20800018
+offset_right = -0.52801514
+offset_bottom = 0.26399994
+
+[node name="02" type="ReferenceRect" parent="." unique_id=400180409]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.29700002
+anchor_top = 0.096
+anchor_right = 0.33200002
+anchor_bottom = 0.157
+offset_left = -0.14401245
+offset_top = -0.20800018
+offset_right = -0.46401978
+offset_bottom = 0.26399994
+
+[node name="03" type="ReferenceRect" parent="." unique_id=2072655595]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40800002
+anchor_top = 0.096
+anchor_right = 0.44300002
+anchor_bottom = 0.157
+offset_left = -0.016021729
+offset_top = -0.20800018
+offset_right = -0.33602905
+offset_bottom = 0.26399994
+
+[node name="04" type="ReferenceRect" parent="." unique_id=718160426]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512
+anchor_top = 0.096
+anchor_right = 0.54700005
+anchor_bottom = 0.157
+offset_left = 0.17596436
+offset_top = -0.20800018
+offset_right = -0.14404297
+offset_bottom = 0.26399994
+
+[node name="05" type="ReferenceRect" parent="." unique_id=1315093183]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.61600006
+anchor_top = 0.096
+anchor_right = 0.651
+anchor_bottom = 0.157
+offset_left = 0.36791992
+offset_top = -0.20800018
+offset_right = 0.047973633
+offset_bottom = 0.26399994
+
+[node name="06" type="ReferenceRect" parent="." unique_id=1945029089]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.734
+anchor_top = 0.096
+anchor_right = 0.76900005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = -0.20800018
+offset_right = 0.11193848
+offset_bottom = 0.26399994
+
+[node name="07" type="ReferenceRect" parent="." unique_id=1245393543]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.859
+anchor_top = 0.096
+anchor_right = 0.89400005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = -0.20800018
+offset_right = 0.11193848
+offset_bottom = 0.26399994
+
+[node name="08" type="ReferenceRect" parent="." unique_id=997777008]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047000002
+anchor_top = 0.096
+anchor_right = 0.082
+anchor_bottom = 0.157
+offset_left = -0.144001
+offset_top = 109.792
+offset_right = -0.46400452
+offset_bottom = 110.264
+
+[node name="09" type="ReferenceRect" parent="." unique_id=1185956521]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.179
+anchor_top = 0.096
+anchor_right = 0.21400002
+anchor_bottom = 0.157
+offset_left = -0.20800781
+offset_top = 109.792
+offset_right = -0.52801514
+offset_bottom = 110.264
+
+[node name="10" type="ReferenceRect" parent="." unique_id=1361488838]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.29700002
+anchor_top = 0.096
+anchor_right = 0.33200002
+anchor_bottom = 0.157
+offset_left = -0.14401245
+offset_top = 109.792
+offset_right = -0.46401978
+offset_bottom = 110.264
+
+[node name="11" type="ReferenceRect" parent="." unique_id=862623484]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40800002
+anchor_top = 0.096
+anchor_right = 0.44300002
+anchor_bottom = 0.157
+offset_left = -0.016021729
+offset_top = 109.792
+offset_right = -0.33602905
+offset_bottom = 110.264
+
+[node name="12" type="ReferenceRect" parent="." unique_id=1866044754]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512
+anchor_top = 0.096
+anchor_right = 0.54700005
+anchor_bottom = 0.157
+offset_left = 0.17596436
+offset_top = 109.792
+offset_right = -0.14404297
+offset_bottom = 110.264
+
+[node name="13" type="ReferenceRect" parent="." unique_id=1444703531]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.61600006
+anchor_top = 0.096
+anchor_right = 0.651
+anchor_bottom = 0.157
+offset_left = 0.36791992
+offset_top = 109.792
+offset_right = 0.047973633
+offset_bottom = 110.264
+
+[node name="14" type="ReferenceRect" parent="." unique_id=1358074782]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.734
+anchor_top = 0.096
+anchor_right = 0.76900005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = 109.792
+offset_right = 0.11193848
+offset_bottom = 110.264
+
+[node name="15" type="ReferenceRect" parent="." unique_id=616173443]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.859
+anchor_top = 0.096
+anchor_right = 0.89400005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = 109.792
+offset_right = 0.11193848
+offset_bottom = 110.264
+
+[node name="16" type="ReferenceRect" parent="." unique_id=68344487]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047000002
+anchor_top = 0.096
+anchor_right = 0.082
+anchor_bottom = 0.157
+offset_left = -0.144001
+offset_top = 226.79199
+offset_right = -0.46400452
+offset_bottom = 227.264
+
+[node name="17" type="ReferenceRect" parent="." unique_id=2072100931]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.179
+anchor_top = 0.096
+anchor_right = 0.21400002
+anchor_bottom = 0.157
+offset_left = -0.20800781
+offset_top = 226.79199
+offset_right = -0.52801514
+offset_bottom = 227.264
+
+[node name="18" type="ReferenceRect" parent="." unique_id=1518161680]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.29700002
+anchor_top = 0.096
+anchor_right = 0.33200002
+anchor_bottom = 0.157
+offset_left = -0.14401245
+offset_top = 226.79199
+offset_right = -0.46401978
+offset_bottom = 227.264
+
+[node name="19" type="ReferenceRect" parent="." unique_id=1810704125]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40800002
+anchor_top = 0.096
+anchor_right = 0.44300002
+anchor_bottom = 0.157
+offset_left = -0.016021729
+offset_top = 226.79199
+offset_right = -0.33602905
+offset_bottom = 227.264
+
+[node name="20" type="ReferenceRect" parent="." unique_id=907326155]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512
+anchor_top = 0.096
+anchor_right = 0.54700005
+anchor_bottom = 0.157
+offset_left = 0.17596436
+offset_top = 226.79199
+offset_right = -0.14404297
+offset_bottom = 227.264
+
+[node name="21" type="ReferenceRect" parent="." unique_id=1303801803]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.61600006
+anchor_top = 0.096
+anchor_right = 0.651
+anchor_bottom = 0.157
+offset_left = 0.36791992
+offset_top = 226.79199
+offset_right = 0.047973633
+offset_bottom = 227.264
+
+[node name="22" type="ReferenceRect" parent="." unique_id=402664875]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.734
+anchor_top = 0.096
+anchor_right = 0.76900005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = 226.79199
+offset_right = 0.11193848
+offset_bottom = 227.264
+
+[node name="23" type="ReferenceRect" parent="." unique_id=226603688]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.859
+anchor_top = 0.096
+anchor_right = 0.89400005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = 226.79199
+offset_right = 0.11193848
+offset_bottom = 227.264
+
+[node name="24" type="ReferenceRect" parent="." unique_id=305399063]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047000002
+anchor_top = 0.096
+anchor_right = 0.082
+anchor_bottom = 0.157
+offset_left = -0.144001
+offset_top = 338.792
+offset_right = -0.46400452
+offset_bottom = 339.264
+
+[node name="25" type="ReferenceRect" parent="." unique_id=1386498590]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.179
+anchor_top = 0.096
+anchor_right = 0.21400002
+anchor_bottom = 0.157
+offset_left = -0.20800781
+offset_top = 338.792
+offset_right = -0.52801514
+offset_bottom = 339.264
+
+[node name="26" type="ReferenceRect" parent="." unique_id=1901858196]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.29700002
+anchor_top = 0.096
+anchor_right = 0.33200002
+anchor_bottom = 0.157
+offset_left = -0.14401245
+offset_top = 338.792
+offset_right = -0.46401978
+offset_bottom = 339.264
+
+[node name="27" type="ReferenceRect" parent="." unique_id=1518021116]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40800002
+anchor_top = 0.096
+anchor_right = 0.44300002
+anchor_bottom = 0.157
+offset_left = -0.016021729
+offset_top = 338.792
+offset_right = -0.33602905
+offset_bottom = 339.264
+
+[node name="28" type="ReferenceRect" parent="." unique_id=2038204442]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512
+anchor_top = 0.096
+anchor_right = 0.54700005
+anchor_bottom = 0.157
+offset_left = 0.17596436
+offset_top = 338.792
+offset_right = -0.14404297
+offset_bottom = 339.264
+
+[node name="29" type="ReferenceRect" parent="." unique_id=704777604]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.61600006
+anchor_top = 0.096
+anchor_right = 0.651
+anchor_bottom = 0.157
+offset_left = 0.36791992
+offset_top = 338.792
+offset_right = 0.047973633
+offset_bottom = 339.264
+
+[node name="30" type="ReferenceRect" parent="." unique_id=852193017]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.734
+anchor_top = 0.096
+anchor_right = 0.76900005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = 338.792
+offset_right = 0.11193848
+offset_bottom = 339.264
+
+[node name="31" type="ReferenceRect" parent="." unique_id=1295613275]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.859
+anchor_top = 0.096
+anchor_right = 0.89400005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = 338.792
+offset_right = 0.11193848
+offset_bottom = 339.264
+
+[node name="32" type="ReferenceRect" parent="." unique_id=1911765853]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047000002
+anchor_top = 0.096
+anchor_right = 0.082
+anchor_bottom = 0.157
+offset_left = -0.144001
+offset_top = 458.792
+offset_right = -0.46400452
+offset_bottom = 459.264
+
+[node name="33" type="ReferenceRect" parent="." unique_id=1576234965]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.179
+anchor_top = 0.096
+anchor_right = 0.21400002
+anchor_bottom = 0.157
+offset_left = -0.20800781
+offset_top = 458.792
+offset_right = -0.52801514
+offset_bottom = 459.264
+
+[node name="34" type="ReferenceRect" parent="." unique_id=1889828570]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.29700002
+anchor_top = 0.096
+anchor_right = 0.33200002
+anchor_bottom = 0.157
+offset_left = -0.14401245
+offset_top = 458.792
+offset_right = -0.46401978
+offset_bottom = 459.264
+
+[node name="35" type="ReferenceRect" parent="." unique_id=1812380919]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40800002
+anchor_top = 0.096
+anchor_right = 0.44300002
+anchor_bottom = 0.157
+offset_left = -0.016021729
+offset_top = 458.792
+offset_right = -0.33602905
+offset_bottom = 459.264
+
+[node name="36" type="ReferenceRect" parent="." unique_id=1365290151]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512
+anchor_top = 0.096
+anchor_right = 0.54700005
+anchor_bottom = 0.157
+offset_left = 0.17596436
+offset_top = 458.792
+offset_right = -0.14404297
+offset_bottom = 459.264
+
+[node name="37" type="ReferenceRect" parent="." unique_id=1384742163]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.61600006
+anchor_top = 0.096
+anchor_right = 0.651
+anchor_bottom = 0.157
+offset_left = 0.36791992
+offset_top = 458.792
+offset_right = 0.047973633
+offset_bottom = 459.264
+
+[node name="38" type="ReferenceRect" parent="." unique_id=124244229]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.734
+anchor_top = 0.096
+anchor_right = 0.76900005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = 458.792
+offset_right = 0.11193848
+offset_bottom = 459.264
+
+[node name="39" type="ReferenceRect" parent="." unique_id=1532735302]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.859
+anchor_top = 0.096
+anchor_right = 0.89400005
+anchor_bottom = 0.157
+offset_left = 0.4319458
+offset_top = 458.792
+offset_right = 0.11193848
+offset_bottom = 459.264
+
+[node name="OOS" type="ReferenceRect" parent="." unique_id=1491987849]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45700002
+anchor_top = 0.23600002
+anchor_right = 0.492
+anchor_bottom = 0.298
+offset_left = 0.53601074
+offset_top = 0.07199097
+offset_right = 0.21606445
+offset_bottom = -0.104003906
 
 [connection signal="button_down" from="save/RichTextLabel/Save" to="." method="_on_save_button_down"]
 [connection signal="pressed" from="logs/RichTextLabel/Menu" to="." method="_on_menu_pressed"]

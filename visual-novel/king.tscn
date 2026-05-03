@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ci3hqfoiwouw5"]
+
+[ext_resource type="PackedScene" uid="uid://glhaas51exia" path="res://rav.tscn" id="1_ycl4e"]
+[ext_resource type="Texture2D" uid="uid://bpuktgqlq2dqk" path="res://sprites/KING1.png" id="2_72x6q"]
+
+[node name="character_example3" unique_id=1282225296 instance=ExtResource("1_ycl4e")]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.282
+anchor_bottom = 0.791
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.13598633
+offset_bottom = -0.02520752
+texture = ExtResource("2_72x6q")
+default_sprite = ExtResource("2_72x6q")

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ba0mnkcvppuab"]
+
+[ext_resource type="Texture2D" uid="uid://kapkjwuj8cwf" path="res://sprites/Q.png" id="1_v2jde"]
+[ext_resource type="Script" uid="uid://d4el5njrjlkyb" path="res://character_example.gd" id="2_ubydd"]
+[ext_resource type="PackedScene" uid="uid://dr7po7w2pws6p" path="res://dialog_box.tscn" id="3_5fd3d"]
+
+[node name="character_example" type="TextureRect" unique_id=2108832509]
+visibility_layer = 2
+anchors_preset = -1
+anchor_right = 0.286
+anchor_bottom = 0.80100006
+offset_right = -0.47201538
+offset_bottom = -0.19702148
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_v2jde")
+expand_mode = 5
+stretch_mode = 4
+script = ExtResource("2_ubydd")
+dialog_box = ExtResource("3_5fd3d")
+default_sprite = ExtResource("1_v2jde")

@@ -4,6 +4,9 @@ var config2 = ConfigFile.new()
 var config3 = ConfigFile.new()
 var my_date_time: int
 var new_date_time_str: String
+var unix_time = Time.get_unix_time_from_system()
+var offset_seconds = 2 * 3600
+var adjusted_time = unix_time + offset_seconds
 
 func _init() -> void:
 	config1.load("user://gameSaveFile1.cfg")
