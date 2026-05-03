@@ -15,6 +15,7 @@ func _on_main_menu_button_down() -> void:
 	GlobalVar.escOpen=false
 	get_tree().paused=false
 	get_tree().change_scene_to_file("res://main_menu.tscn")
+	GlobalVar.dialogSkipped=0
 	queue_free()
 
 #@warning_ignore("unused_parameter")

@@ -264,14 +264,14 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_ao2gm")
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.025
-anchor_right = 0.20500001
-anchor_bottom = 0.078
+anchor_right = 0.246
+anchor_bottom = 0.091000006
 offset_left = 13.088005
 offset_top = -0.11507416
-offset_right = 0.064956665
-offset_bottom = 0.2009697
+offset_right = -31.139648
+offset_bottom = -6.098873
 theme_override_font_sizes/font_size = 24
-text = "SETTINGS.control"
+text = "root.SETTINGS"
 
 [node name="Label" type="Label" parent="." unique_id=1852370809]
 layout_mode = 1
@@ -444,7 +444,7 @@ visibility_layer = 2
 custom_minimum_size = Vector2(700, 50)
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 32
-text = " text.speed"
+text = " TEXT SPEED"
 
 [node name="Text speed" type="HSlider" parent="PanelContainer4/Volume" unique_id=1203007988]
 unique_name_in_owner = true
@@ -466,7 +466,8 @@ theme_override_icons/grabber_highlight = SubResource("NoiseTexture2D_5v8ap")
 theme_override_icons/grabber_disabled = SubResource("NoiseTexture2D_se8ut")
 theme_override_icons/tick = SubResource("NoiseTexture2D_ao2gm")
 theme_override_styles/slider = SubResource("StyleBoxLine_07a1d")
-max_value = 1.0
+min_value = 0.5
+max_value = 1.5
 step = 0.001
 value = 0.5
 script = ExtResource("2_se8ut")

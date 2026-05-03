@@ -61,4 +61,4 @@ func save()->void:#Gemmer værdier i config filer
 	config.set_value("MusicVolume","music_volume",$"%Music volume".value)
 	config.set_value("SFXVolume","sfx_volume",$"%SFX volume".value)
 	config.set_value("TextSpeed","text_speed",$"%Text speed".value)
-	config.save("user://optionsSaveFile.cfg")
+	config.save("user://optionsSaveFile.cfg")#gemmer set values

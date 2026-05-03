@@ -27,6 +27,8 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.is_pressed() and flick==true:
 		print ("Click")
 		advance()
+	if event.is_action_pressed("ui_accept"):
+		advance()
 
 func advance():
 	if tween:
@@ -36,27 +38,36 @@ func advance():
 		%Dialogbox.visible_ratio=1
 	else:
 		print("Killing")
+		GlobalVar.dialogSkips=GlobalVar.dialogSkips+1
 		self_destruct()
 
 func advanceXTimes():
+	print("skips:")
 	print(GlobalVar.dialogSkips)
+	print("skipped:")
 	print(GlobalVar.dialogSkipped)
 	if tween and GlobalVar.dialogSkips!=GlobalVar.dialogSkipped:
 		print("Stop tween")
 		tween.stop()
 		tween=null
-		GlobalVar.dialogSkipped=GlobalVar.dialogSkipped+1
 		self_destruct()
 	elif GlobalVar.dialogSkips!=GlobalVar.dialogSkipped:
 		print("Killing x Times")
-		GlobalVar.dialogSkipped=GlobalVar.dialogSkipped+1
 		print(tween)
 		self_destruct()
 	else:
 		GlobalVar.loadNow=false
 		reset_text()
 
+func _process(_delta: float) -> void:
+	if GlobalVar.loadNow2 and GlobalVar.dialogSkipped!=GlobalVar.dialogSkips:
+		print("adv.f.pro")
+		GlobalVar.loadNow=true
+		GlobalVar.loadNow2=false
+		advanceXTimes()
+
 func self_destruct():
+	GlobalVar.dialogSkipped=GlobalVar.dialogSkipped+1
 	get_parent().remove_child(self)
 	complete.emit()
 	print("selfDestruct")
@@ -64,25 +75,20 @@ func self_destruct():
 	print("selfDestructed")
 
 func _ready() -> void:
-	#if GlobalVar.loadNow==true:
-		#print("loadNow?:")
-		#print(GlobalVar.loadNow)
-		#reset_text()
-		#advanceXTimes()
-	#else:
 	reset_text()
 
 func reset_text():
 	print("resetText")
 	if ! is_node_ready():
 		return
-	%Dialogbox.text=" "+charName+" \n  " + dialog
+	charName=charName.to_upper()
+	%NameBox.text=" "+charName
+	%Dialogbox.text="\n  " + dialog
 	%Dialogbox.visible_ratio=0
 	if tween:
 		tween.stop()
 	tween = get_tree().create_tween()
 	@warning_ignore("integer_division")
-	
 	var dialogTextSpeed=(dialog.length()/30.0+0.5)/TextSpeed.text_speed
 	if GlobalVar.loadNow==true and GlobalVar.dialogSkipped!=GlobalVar.dialogSkips:
 		Engine.time_scale=100
@@ -94,13 +100,11 @@ func reset_text():
 	tween=null
 	if GlobalVar.loadNow==true and GlobalVar.dialogSkipped!=GlobalVar.dialogSkips:
 		Engine.time_scale=100
-		GlobalVar.dialogSkipped=GlobalVar.dialogSkipped+1
 		print(GlobalVar.dialogSkips)
 		print(GlobalVar.dialogSkipped)
 		self_destruct()
 	else:
 		GlobalVar.loadNow=false
-		GlobalVar.dialogSkips=GlobalVar.dialogSkips+1
 		Engine.time_scale=1
 
 func _on_texture_button_pressed():

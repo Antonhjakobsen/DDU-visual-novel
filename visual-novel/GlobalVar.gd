@@ -6,6 +6,7 @@ extends Node
 @export var dialogSkips: int
 @export var dialogSkipped: int
 @export var loadNow: bool
+@export var loadNow2: bool
 
 func _input(event)->void:#Holder øje med om spilleren releaser escape knappen og låser derefter op for muligheden for at lukke den igen
 	if event.is_action_released("escPressed"):
