@@ -679,14 +679,14 @@ offset_bottom = 459.264
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.45700002
-anchor_top = 0.23600002
-anchor_right = 0.492
-anchor_bottom = 0.298
-offset_left = 0.53601074
-offset_top = 0.07199097
-offset_right = 0.21606445
-offset_bottom = -0.104003906
+anchor_left = -0.439
+anchor_top = 0.37500003
+anchor_right = -0.40500003
+anchor_bottom = 0.437
+offset_left = -0.27197266
+offset_top = -1.5258789e-05
+offset_right = 0.5600891
+offset_bottom = -0.17599487
 
 [connection signal="button_down" from="save/RichTextLabel/Save" to="." method="_on_save_button_down"]
 [connection signal="pressed" from="logs/RichTextLabel/Menu" to="." method="_on_menu_pressed"]
