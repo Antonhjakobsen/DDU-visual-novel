@@ -16,7 +16,7 @@ func _init() -> void:
 	my_date_time = Time.get_unix_time_from_system()
 	new_date_time_str =config1.get_value("dateTime","dateTime","null")
 
-func _process(_delta: float) -> void:
+func _input(event: InputEvent) -> void:
 	if %saveTimeLabel:
 		%saveTimeLabel.text=new_date_time_str
 
