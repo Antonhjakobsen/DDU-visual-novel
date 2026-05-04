@@ -259,7 +259,7 @@ offset_bottom = 0.0399971
 theme_override_font_sizes/normal_font_size = 24
 text = "Save file #1"
 
-[node name="saveTimeLabel" type="RichTextLabel" parent="save1" unique_id=1787847781]
+[node name="saveTimeLabel1" type="RichTextLabel" parent="save1" unique_id=1787847781]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -331,7 +331,8 @@ offset_bottom = 0.0399971
 theme_override_font_sizes/normal_font_size = 24
 text = "Save file #2"
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="save2" unique_id=135710693]
+[node name="saveTimeLabel2" type="RichTextLabel" parent="save2" unique_id=135710693]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.042000003
@@ -402,7 +403,8 @@ offset_bottom = 0.0399971
 theme_override_font_sizes/normal_font_size = 24
 text = "Save file #3"
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="save3" unique_id=1112212728]
+[node name="saveTimeLabel3" type="RichTextLabel" parent="save3" unique_id=1112212728]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.042000003
