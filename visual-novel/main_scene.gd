@@ -64,8 +64,8 @@ func _ready() -> void:
 	await o.say("YOU","I walk down the hallway. I can’t help but feel out of place,\n  even though I’ve been here multiple times every day. \n  It feels like I took a wrong turn on a familiar road.")
 	await o.say("YOU","I’ve already passed a few clubs by now, \n  but none of them stood out to me.")
 	await o.say("YOU","Luckily no one's seen me out here yet. \n  The worst thing that could happen right now is-")
-	await o.move(%"02",0.5)
-	await o.move(%"09",0.5)
+	await o.move(%"02",1)
+	await o.move(%"09",1)
 	await o.say("Sentry","\"CRAP I’M GONNA BE LATE!!!\"")
 	await o.say("YOU","Then, like clockwork I run into an old friend, \n  the one thing I was trying to avoid.")
 	await o.say("YOU","He’s running through the halls like a complete lunatic, \n  almost running straight into me.")
@@ -93,18 +93,21 @@ func _ready() -> void:
 	await o.say("YOU","\"Oh yeah…\"")
 	await o.say("YOU","He’s right, there’s nothing but the science club that way. \n  I don’t have much of a way out of this…")
 	await o.say("YOU","\"Well...I- \"")
+	o.flip_h=false
 	await o.say("Sentry","\"You’re not in a club?!\"")
 	await o.say("YOU","\"How did you-?\"")
 	await o.say("Sentry","\"Oh it was just a guess ha-ha\"")
+	o.attr("switch")
 	await o.say("Sentry","\"You should totally join mine!\"")
 	await o.say("YOU","\"I was already looking around so- \"")
+	o.attr()
 	await o.say("Sentry","\"Then come look at ours it’s \n  not that far of a walk, come it’s just this way!\"")
 	await o.say("YOU","I can barely get a word in. He’s already decided to get me to join his club, \n  there’s no way I’m getting out of this. Once he sets\n  his sights on something, he never gives up till it’s done.")
 	await o.say("Sentry","\"Oh I know you’re going to love it,\n  it’s all about games, games and more games!\"")
 	await o.say("Sentry","\"You still play video games, right?\"")
 	await o.say("YOU","\"Yeah.\"")
 	await o.say("YOU","Sentry is practically dragging me down \n  the hallway, it seems like I have no choice \n  but to go.")
-	await o.say("YOU","He’s still blabbering on, switching from subject to subject. \n  I haven’t even said a word the entire time.")
+	await o.say("YOU","He’s still blabbering on, \n  switching from subject to subject. \n  I haven’t even said a word the entire time.")
 	var transitionX=create_tween()
 	transitionX.tween_property(%background, "modulate:a", 0, 1.5)
 	await o.move(%OOS,2)
@@ -237,22 +240,27 @@ func wait(seconds:float) -> Signal:#Laver en timer til at holde øje med tiden (
 
 func _on_settings_button_down() -> void:#Åbner settings når settings knap trykkes
 	VarOverlay.showMeSettings()#Kalder det fra VarOverlay script, som er globalt
+	%UiSimpleConfirm.play()
 
 func _on_save_button_down() -> void:#Samme som ovenfor
 	VarOverlay.showMeSaves()
+	%UiSimpleConfirm.play()
 
 func _input(event)->void:#Åbner eller lukker escape menu når escape bliver trykket
 	if event.is_action_pressed("escPressed"):
 		if GlobalVar.escOpen==false:#Åbner hvis den ikke er åben
+			%UiSimpleSelect.play()
 			print(GlobalVar.escOpen)
 			print("opening escMenu")
 			VarOverlay.showMeEsc()#Kører det igennem det globale script
 			GlobalVar.escOpen=true
 		elif GlobalVar.escOpen and GlobalVar.openRelease:#Hvis den er åben, så lukker den
-				VarOverlay.overlayEsc.queue_free()
-				GlobalVar.escOpen=false
+			%UiSimpleCancel.play()
+			VarOverlay.overlayEsc.queue_free()
+			GlobalVar.escOpen=false
 
 
 func _on_menu_pressed() -> void:
+	%UiSimpleConfirm.play()
 	VarOverlay.showMeEsc()
 	GlobalVar.escOpen=true

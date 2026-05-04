@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://b7arq43ejhy33"]
 
 [ext_resource type="Script" uid="uid://dqqfj2g64o3x7" path="res://main_scene.gd" id="1_0f027"]
+[ext_resource type="AudioStream" uid="uid://blurveuc3tee8" path="res://Sound/UI Simple Confirm.wav" id="2_d5x1h"]
+[ext_resource type="AudioStream" uid="uid://b8tu10cmaag2w" path="res://Sound/UI Simple Select.wav" id="3_8mm7a"]
+[ext_resource type="AudioStream" uid="uid://pwe446k5lv4f" path="res://Sound/UI Simple Cancel.wav" id="4_hq1ik"]
 
 [node name="SetDressing" type="Control" unique_id=1651370572]
 layout_mode = 3
@@ -687,6 +690,19 @@ offset_left = -0.27197266
 offset_top = -1.5258789e-05
 offset_right = 0.5600891
 offset_bottom = -0.17599487
+
+[node name="UiSimpleConfirm" type="AudioStreamPlayer" parent="." unique_id=249941106]
+unique_name_in_owner = true
+stream = ExtResource("2_d5x1h")
+bus = &"SFX"
+
+[node name="UiSimpleSelect" type="AudioStreamPlayer" parent="." unique_id=2135489841]
+unique_name_in_owner = true
+stream = ExtResource("3_8mm7a")
+
+[node name="UiSimpleCancel" type="AudioStreamPlayer" parent="." unique_id=265103052]
+unique_name_in_owner = true
+stream = ExtResource("4_hq1ik")
 
 [connection signal="button_down" from="save/RichTextLabel/Save" to="." method="_on_save_button_down"]
 [connection signal="pressed" from="logs/RichTextLabel/Menu" to="." method="_on_menu_pressed"]

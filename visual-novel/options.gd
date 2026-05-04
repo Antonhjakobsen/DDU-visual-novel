@@ -29,6 +29,7 @@ func load_settings()->void:#Loader alle settings når denne funktion er kørt
 	set_slider_value()#Implementerer de satte værdier i sliders visuelt
 
 func set_slider_value()->void:#Visuelt display af værdier der bliver set i starten
+	
 	if(%"Master volume"==null):#Nødvendig, vil altid give en error, før den virker for at initialisere
 		print("(set_slider) null error")
 	else:
@@ -57,12 +58,14 @@ func _on_text_speed_value_changed(value: float) -> void:#Når værdi i slider bl
 
 func _on_close_settings_pressed() -> void:
 	#Dette er til at teste: print("hideMeRun")
+	%UiSimpleCancel.play()#virker ikke siden noden bliver fjernet i det den spiller
 	save()#Kører en funktion som gemmer værdierne i config filer
 	get_tree().paused=false#Sætter den originale scene igang igen
 	queue_free()
 
 func save()->void:#Gemmer værdier i config filer
 	#Dette er til at teste: print("saving")
+	%UiSimpleConfirm.play()
 	config.set_value("MasterVolume","master_volume",$"%Master volume".value)
 	config.set_value("MusicVolume","music_volume",$"%Music volume".value)
 	config.set_value("SFXVolume","sfx_volume",$"%SFX volume".value)

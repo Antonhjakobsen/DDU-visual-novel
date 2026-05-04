@@ -26,6 +26,7 @@ func _on_close_saves_pressed() -> void:
 	queue_free()
 
 func save1()->void:
+	%UiSimpleConfirm.play()
 	print("save 1 skips:")
 	print(GlobalVar.dialogSkips)
 	config1.set_value("dateTime","dateTime",Time.get_datetime_string_from_unix_time(my_date_time))
@@ -34,12 +35,14 @@ func save1()->void:
 	config1.save("user://gameSaveFile1.cfg")
 
 func save2()->void:
+	%UiSimpleConfirm.play()
 	print("saving 2")
 	config2.set_value("Paht1","path1",GlobalVar.path1)
 	config2.set_value("dialogSkips","DialogSkips",GlobalVar.dialogSkips)
 	config2.save("user://gameSaveFile2.cfg")
 	
 func save3()->void:
+	%UiSimpleConfirm.play()
 	print("saving 3")
 	config3.set_value("Paht1","path1",GlobalVar.path1)
 	config3.set_value("dialogSkips","DialogSkips",GlobalVar.dialogSkips)
@@ -50,6 +53,7 @@ func _on_save_1_pressed() -> void:
 	%Save1.text="SAVED"
 
 func _on_load_1_pressed() -> void:
+	%UiSimpleConfirm.play()
 	config1.load("user://gameSaveFile1.cfg")
 	GlobalVar.path1=config1.get_value("Path1","path1",GlobalVar.path1)
 	GlobalVar.dialogSkips=config1.get_value("dialogSkips","DialogSkips")
@@ -65,6 +69,7 @@ func _on_save_2_pressed() -> void:
 	%Save2.text="SAVED"
 
 func _on_load_2_pressed() -> void:
+	%UiSimpleConfirm.play()
 	GlobalVar.dialogSkips=config2.get_value("dialogSkips","DialogSkips",GlobalVar.dialogSkips)
 	GlobalVar.path1=config2.get_value("Path1","path1",GlobalVar.path1)
 	GlobalVar.loadNow2=true
@@ -77,6 +82,7 @@ func _on_save_3_pressed() -> void:
 	%Save3.text="SAVED"
 
 func _on_load_3_pressed() -> void:
+	%UiSimpleConfirm.play()
 	GlobalVar.dialogSkips=config3.get_value("dialogSkips","DialogSkips",GlobalVar.dialogSkips)
 	GlobalVar.path1=config3.get_value("Path1","path1",GlobalVar.path1)
 	GlobalVar.loadNow2=true

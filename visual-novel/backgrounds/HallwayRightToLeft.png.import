@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bimhotshkxew2"
-path="res://.godot/imported/Screenshot 2026-04-22 at 09.09.33.png-fe444ffe17ae227cb906bcae8b19ee18.ctex"
+uid="uid://c4v2yfdb1pdik"
+path="res://.godot/imported/HallwayRightToLeft.png-033bf0c1421d95cc8021b97ce11d0fa0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Screenshot 2026-04-22 at 09.09.33.png"
-dest_files=["res://.godot/imported/Screenshot 2026-04-22 at 09.09.33.png-fe444ffe17ae227cb906bcae8b19ee18.ctex"]
+source_file="res://backgrounds/HallwayRightToLeft.png"
+dest_files=["res://.godot/imported/HallwayRightToLeft.png-033bf0c1421d95cc8021b97ce11d0fa0.ctex"]
 
 [params]
 

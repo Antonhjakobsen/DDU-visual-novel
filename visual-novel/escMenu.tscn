@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://c8yr0ibx11dmy"]
 
 [ext_resource type="Script" uid="uid://2q0hk61jw2k6" path="res://esc_menu.gd" id="1_1tpuw"]
+[ext_resource type="AudioStream" uid="uid://blurveuc3tee8" path="res://Sound/UI Simple Confirm.wav" id="2_tne67"]
+[ext_resource type="AudioStream" uid="uid://b8tu10cmaag2w" path="res://Sound/UI Simple Select.wav" id="3_cfsp3"]
+[ext_resource type="AudioStream" uid="uid://pwe446k5lv4f" path="res://Sound/UI Simple Cancel.wav" id="4_to2v6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ee7bu"]
 bg_color = Color(0, 0, 0, 1)
@@ -140,6 +143,19 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cfsp3")
 theme_override_styles/hover = SubResource("StyleBoxFlat_1tpuw")
 text = "MAIN MENU"
+
+[node name="UiSimpleConfirm" type="AudioStreamPlayer" parent="." unique_id=1036000073]
+unique_name_in_owner = true
+stream = ExtResource("2_tne67")
+bus = &"SFX"
+
+[node name="UiSimpleSelect" type="AudioStreamPlayer" parent="." unique_id=1197396344]
+unique_name_in_owner = true
+stream = ExtResource("3_cfsp3")
+
+[node name="UiSimpleCancel" type="AudioStreamPlayer" parent="." unique_id=912045133]
+unique_name_in_owner = true
+stream = ExtResource("4_to2v6")
 
 [connection signal="button_down" from="ColorRect/Resume" to="." method="_on_resume_button_down"]
 [connection signal="button_down" from="ColorRect4/Save file" to="." method="_on_save_file_button_down"]

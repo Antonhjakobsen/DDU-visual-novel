@@ -6,12 +6,15 @@ func _on_resume_button_down() -> void:
 	queue_free()
 
 func _on_save_file_button_down() -> void:
+	%UiSimpleSelect.play()
 	VarOverlay.showMeSaves()
 
 func _on_settings_button_down() -> void:
+	%UiSimpleSelect.play()
 	VarOverlay.showMeSettings()
 
 func _on_main_menu_button_down() -> void:
+	%UiSimpleCancel.play()
 	GlobalVar.escOpen=false
 	get_tree().paused=false
 	get_tree().change_scene_to_file("res://main_menu.tscn")

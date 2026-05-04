@@ -35,7 +35,7 @@ GlobalAudioStreamPlayer="*uid://dvp6fvwf8i4rd"
 
 [display]
 
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 
 [gui]
 
