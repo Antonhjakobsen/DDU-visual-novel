@@ -19,6 +19,10 @@ run/main_scene="uid://d2khjacbs6auf"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://bx002f480367t"
+
 [autoload]
 
 TextSpeed="*res://text_speed.gd"
@@ -27,6 +31,7 @@ VarOverlay="*res://varOverlay.gd"
 EscMenu="*uid://2q0hk61jw2k6"
 Files="*uid://bs22ssm465ob8"
 GlobalVar="*uid://cvo11g4n7yj58"
+GlobalAudioStreamPlayer="*uid://dvp6fvwf8i4rd"
 
 [display]
 

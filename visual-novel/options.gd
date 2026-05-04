@@ -19,6 +19,9 @@ func load_settings()->void:#Loader alle settings når denne funktion er kørt
 	MusicVolume = config.get_value("MusicVolume","music_volume",1)#Import
 	SFXVolume = config.get_value("SFXVolume","sfx_volume",1)#Import
 	textSpeed = config.get_value("TextSpeed","text_speed",0.5)#Import
+	print(MasterVolume)
+	print(MusicVolume)
+	print(SFXVolume)
 	AudioServer.set_bus_volume_db(master_bus_index,db_to_linear(MasterVolume))#Setter værdien af audioserveren
 	AudioServer.set_bus_volume_db(music_bus_index,db_to_linear(MusicVolume))#Setter værdien af audioserveren
 	AudioServer.set_bus_volume_db(sfx_bus_index,db_to_linear(SFXVolume))#Setter værdien af audioserveren
@@ -35,13 +38,16 @@ func set_slider_value()->void:#Visuelt display af værdier der bliver set i star
 		%"Text speed".value=config.get_value("TextSpeed","text_speed",0.5)#setter værdi i slideren direkte
 
 func _on_master_volume_value_changed(value: float) -> void:#Når værdi i slider bliver ændret kører denne funktion
-	AudioServer.set_bus_volume_db(master_bus_index,db_to_linear(value))#Setter audioserver værdi til sliderens værdi
+	AudioServer.set_bus_volume_db(master_bus_index,linear_to_db(value))#Setter audioserver værdi til sliderens værdi
+	print(AudioServer.get_bus_name(0))
 
 func _on_music_volume_value_changed(value: float) -> void:#Når værdi i slider bliver ændret kører denne funktion
-	AudioServer.set_bus_volume_db(music_bus_index,db_to_linear(value))#Setter audioserver værdi til sliderens værdi
+	AudioServer.set_bus_volume_db(music_bus_index,linear_to_db(value))#Setter audioserver værdi til sliderens værdi
+	print(AudioServer.get_bus_name(1))
 
 func _on_sfx_volume_value_changed(value: float) -> void:#Når værdi i slider bliver ændret kører denne funktion
-	AudioServer.set_bus_volume_db(sfx_bus_index,db_to_linear(value))#Setter audioserver værdi til sliderens værdi
+	AudioServer.set_bus_volume_db(sfx_bus_index,linear_to_db(value))#Setter audioserver værdi til sliderens værdi
+	print(AudioServer.get_bus_name(2))
 
 func _on_text_speed_value_changed(value: float) -> void:#Når værdi i slider bliver ændret kører denne funktion
 	#Dette er til at teste: print(config.get_value("TextSpeed","text_speed"))

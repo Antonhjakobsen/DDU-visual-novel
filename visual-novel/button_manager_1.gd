@@ -1,6 +1,5 @@
 extends Control
-var overlay = preload("res://options.tscn").instantiate()
-
+var flip=true
 func _on_options_pressed() -> void:
 	VarOverlay.showMeSettings()
 
@@ -11,6 +10,10 @@ func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file("res://main_scene.tscn")
 
 func _input(event)->void:
+	if flip:
+		VarOverlay.showMeSettings()
+		flip=false
+		VarOverlay.overlay.hide()
 	if event.is_action_pressed("escPressed"):
 		if GlobalVar.escOpen==false:
 			print(GlobalVar.escOpen)

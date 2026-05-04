@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dvp6fvwf8i4rd"]
+
+[ext_resource type="AudioStream" uid="uid://bpbbrxb2hfhxq" path="res://Sound/Guitar on the Water.wav" id="1_g84o6"]
+[ext_resource type="Script" uid="uid://dbn7n7b6gai0d" path="res://audio_stream_player.gd" id="2_td4n3"]
+
+[node name="Music" type="AudioStreamPlayer" unique_id=1090579166]
+process_mode = 3
+stream = ExtResource("1_g84o6")
+autoplay = true
+bus = &"Music"
+script = ExtResource("2_td4n3")

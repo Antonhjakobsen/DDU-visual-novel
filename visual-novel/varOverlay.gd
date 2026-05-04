@@ -3,7 +3,7 @@ var overlay
 func showMeSettings()->void:
 	overlay = preload("res://options.tscn").instantiate()
 	if (is_instance_valid(overlay)):
-		print("valid")
+		print("valid settings overlay")
 		get_tree().root.add_child(overlay)
 		overlay.show()
 	else:
