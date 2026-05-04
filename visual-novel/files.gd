@@ -26,15 +26,17 @@ func _init() -> void:
 	my_date_time3 = Time.get_unix_time_from_system()
 	new_date_time_str3 =config3.get_value("dateTime3","dateTime3","null3")
 
-@warning_ignore("unused_parameter")
-func _input(event: InputEvent) -> void:
-	if %saveTimeLabel1:
-		%saveTimeLabel1.text=new_date_time_str
-	if %saveTimeLabel2:
-		%saveTimeLabel2.text=new_date_time_str2
-	if %saveTimeLabel3:
-		%saveTimeLabel3.text=new_date_time_str3
+func _ready() -> void:
+	loadTimeLabels()
 
+func loadTimeLabels():
+	if %saveTimeLabel1!=null:
+		%saveTimeLabel1.text=new_date_time_str
+	if %saveTimeLabel2!=null:
+		%saveTimeLabel2.text=new_date_time_str2
+	if %saveTimeLabel3!=null:
+		%saveTimeLabel3.text=new_date_time_str3
+	
 func _on_close_saves_pressed() -> void:
 	print("hideMeRun")
 	get_tree().paused=false
@@ -68,6 +70,7 @@ func save3()->void:
 func _on_save_1_pressed() -> void:
 	save1()
 	%Save1.text="SAVED"
+	loadTimeLabels()
 
 func _on_load_1_pressed() -> void:
 	%UiSimpleConfirm.play()
@@ -84,6 +87,7 @@ func _on_load_1_pressed() -> void:
 func _on_save_2_pressed() -> void:
 	save2()
 	%Save2.text="SAVED"
+	loadTimeLabels()
 
 func _on_load_2_pressed() -> void:
 	%UiSimpleConfirm.play()
@@ -97,6 +101,7 @@ func _on_load_2_pressed() -> void:
 func _on_save_3_pressed() -> void:
 	save3()
 	%Save3.text="SAVED"
+	loadTimeLabels()
 
 func _on_load_3_pressed() -> void:
 	%UiSimpleConfirm.play()
