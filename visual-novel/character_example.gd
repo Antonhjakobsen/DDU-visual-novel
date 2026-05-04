@@ -28,13 +28,15 @@ func say(charName:String,text: String, tag: String = "",trans:Tween.TransitionTy
 		print("unknown dialog box configuration: " + str(dialog_box))
 		garbage_error.emit()
 		return garbage_error
-	var pos:Vector2=self.position+Vector2(0,-20)
-	var posReset:Vector2=self.position+Vector2(0,0)
-	var tween=get_tree().create_tween()
-	tween.tween_property(self,"position",pos,seconds).set_trans(trans)
-	tween.tween_property(self,"position",posReset,seconds).set_trans(trans)
 	var d: DialogBox = dialog_box.instantiate()
 	d.dialog = text
 	d.charName=charName
+	if d.charName!="YOU":
+		print(d.name)
+		var pos:Vector2=self.position+Vector2(0,-20)
+		var posReset:Vector2=self.position+Vector2(0,0)
+		var tween=get_tree().create_tween()
+		tween.tween_property(self,"position",pos,seconds).set_trans(trans)
+		tween.tween_property(self,"position",posReset,seconds).set_trans(trans)
 	get_tree().current_scene.add_child(d)
 	return d.complete

@@ -42,3 +42,15 @@ func showMePaths()->void:
 		print("pathShow")
 	else:
 		print("error")
+
+var overlayPath2
+
+func showMePaths2()->void:
+	overlayPath2=preload("res://path_2.tscn").instantiate()
+	if (is_instance_valid(overlayPath2)):
+		print("valid")
+		get_tree().root.add_child(overlayPath2)
+		overlayPath2.show()
+		print("pathShow")
+	else:
+		print("error")

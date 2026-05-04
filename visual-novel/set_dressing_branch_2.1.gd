@@ -21,20 +21,30 @@ func _ready() -> void:
 	#_.flip_(h/v)=(true/false)
 	#_.attr("navn på alternativ udseende på karakter")
 	#await venter på den sidste kommando er færdig til at udføre den næste
-	o.snap(%OOSL)
-	r.snap(%OOSL)
-	q.snap(%OOSL)
-	h.snap(%OOSL)
-	k.snap(%OOSL)
 	%background.texture=load("res://backgrounds/Classroom.png")
+	r.snap(%OOSL)
+	o.snap(%OOSL)
+	q.snap(%OOSL)
+	k.snap(%OOSL)
+	h.snap(%OOSL)
 	var transition1=create_tween()
 	transition1.tween_property(%background, "modulate:a", 0, 0)
 	transition1.tween_property(%background, "modulate:a", 1, 2)
-	await o.move(%OOSL,2.5)
+	await wait(2)
+	r.snap(%OOSL)
+	o.snap(%"09")
+	q.snap(%"14")
+	k.snap(%"10")
+	h.snap(%"15")
+	await o.move(%"11",1.5)
 	await o.say("Sentry", "\"Yo is that ...!\"")
 	await o.say("Sentry", "\"That game is so good!\"")
 	await o.say("Sentry", "\"We got to play that one!\"")
 	await k.say("KING", "\"Alright let me collect the games, \n  I'll store them in the supply closet for the time being.\"")
+	k.move(%"17",0.5)
+	k.move(%"13",1.25)
+	k.move(%"14",0.5)
+	k.move(%"11",0.75)
 	await o.say("YOU", "KING goes around collecting every game we brought, \n  and goes to the closet to store them. \n  While he does that Q goes over everything \n  we need to get done before the day ends.")
 	await q.say("Quickshot", "\"Alright, then Harbinger and I will handle \n  all the flyers and decorations, just like last year.\"")
 	await k.say("KING", "\"Actually, I could really use \n  your help this time around Q.\"")
@@ -112,11 +122,19 @@ func _ready() -> void:
 	await r.say("Ravager?", "\"!T'S TO0 L5T3 FOR TH#T NOW\"")
 	await o.say("", "D0NT L#T HIM G3T !N YOUR H€@D")
 	#Screen flashes and Ravager is gone.
+	var f = ColorRect.new()#laver farve firkant
+	f.color = Color.WHITE#laver firkant hvid
+	f.set_anchors_preset(Control.PRESET_FULL_RECT)#Sætter L B til skærmstørrelse
+	add_child(f)#tilføj firkant
+	var t = create_tween()#tween (transition)
+	t.tween_property(f, "modulate:a", 0.0, 1.0)#giver den en kommando
+	t.tween_callback(f.queue_free)#Når den er færdig fjerner den objektet
 	await o.say("YOU", "Without warning Ravager takes off leaving you in the hallway, \n  what a shame.")
 	await o.say("", "WHAT ARE YOU WAITING FOR, GET BACK TO IT.")
 	await o.say("YOU", "\"Ravager?\"")
 	await o.say("", "...")
 	await o.say("YOU", "What even is the time? Maybe I should get back to the others.")
+	get_tree().change_scene_to_file("res://set_dressing_branch_3.tscn")
 
 func wait(seconds:float) -> Signal:#Laver en timer til at holde øje med tiden (bruges andre til dialog box)
 	return get_tree().create_timer(seconds).timeout
