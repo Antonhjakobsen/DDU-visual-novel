@@ -152,10 +152,12 @@ bus = &"SFX"
 [node name="UiSimpleSelect" type="AudioStreamPlayer" parent="." unique_id=1197396344]
 unique_name_in_owner = true
 stream = ExtResource("3_cfsp3")
+bus = &"SFX"
 
 [node name="UiSimpleCancel" type="AudioStreamPlayer" parent="." unique_id=912045133]
 unique_name_in_owner = true
 stream = ExtResource("4_to2v6")
+bus = &"SFX"
 
 [connection signal="button_down" from="ColorRect/Resume" to="." method="_on_resume_button_down"]
 [connection signal="button_down" from="ColorRect4/Save file" to="." method="_on_save_file_button_down"]

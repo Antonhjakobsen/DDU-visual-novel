@@ -36,7 +36,8 @@ func loadTimeLabels():
 		%saveTimeLabel2.text=new_date_time_str2
 	if %saveTimeLabel3!=null:
 		%saveTimeLabel3.text=new_date_time_str3
-	
+	print("loadTimeLabels")
+
 func _on_close_saves_pressed() -> void:
 	print("hideMeRun")
 	get_tree().paused=false

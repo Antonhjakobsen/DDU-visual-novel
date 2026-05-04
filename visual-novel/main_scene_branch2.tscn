@@ -1,19 +1,18 @@
-[gd_scene format=3 uid="uid://b7arq43ejhy33"]
+[gd_scene format=3 uid="uid://b8mnufaynp8mo"]
 
-[ext_resource type="Script" uid="uid://dqqfj2g64o3x7" path="res://main_scene.gd" id="1_0f027"]
-[ext_resource type="Texture2D" uid="uid://d16p537ggm6ch" path="res://backgrounds/Classroom.png" id="2_8mm7a"]
-[ext_resource type="AudioStream" uid="uid://blurveuc3tee8" path="res://Sound/UI Simple Confirm.wav" id="2_d5x1h"]
-[ext_resource type="AudioStream" uid="uid://b8tu10cmaag2w" path="res://Sound/UI Simple Select.wav" id="3_8mm7a"]
-[ext_resource type="AudioStream" uid="uid://pwe446k5lv4f" path="res://Sound/UI Simple Cancel.wav" id="4_hq1ik"]
+[ext_resource type="Script" uid="uid://d2kjb3igy0eoa" path="res://main_scene_branch_2.gd" id="1_57u3o"]
+[ext_resource type="AudioStream" uid="uid://blurveuc3tee8" path="res://Sound/UI Simple Confirm.wav" id="2_spuqd"]
+[ext_resource type="AudioStream" uid="uid://b8tu10cmaag2w" path="res://Sound/UI Simple Select.wav" id="3_6j5q4"]
+[ext_resource type="AudioStream" uid="uid://pwe446k5lv4f" path="res://Sound/UI Simple Cancel.wav" id="4_ydphn"]
 
-[node name="SetDressing" type="Control" unique_id=1651370572]
+[node name="SetDressingBranch2" type="Control" unique_id=1651370572]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_0f027")
+script = ExtResource("1_57u3o")
 
 [node name="background" type="TextureRect" parent="." unique_id=689576263]
 unique_name_in_owner = true
@@ -23,7 +22,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_8mm7a")
 expand_mode = 1
 stretch_mode = 5
 
@@ -695,17 +693,17 @@ offset_bottom = -0.17599487
 
 [node name="UiSimpleConfirm" type="AudioStreamPlayer" parent="." unique_id=249941106]
 unique_name_in_owner = true
-stream = ExtResource("2_d5x1h")
+stream = ExtResource("2_spuqd")
 bus = &"SFX"
 
 [node name="UiSimpleSelect" type="AudioStreamPlayer" parent="." unique_id=2135489841]
 unique_name_in_owner = true
-stream = ExtResource("3_8mm7a")
+stream = ExtResource("3_6j5q4")
 bus = &"SFX"
 
 [node name="UiSimpleCancel" type="AudioStreamPlayer" parent="." unique_id=265103052]
 unique_name_in_owner = true
-stream = ExtResource("4_hq1ik")
+stream = ExtResource("4_ydphn")
 bus = &"SFX"
 
 [connection signal="button_down" from="save/RichTextLabel/Save" to="." method="_on_save_button_down"]

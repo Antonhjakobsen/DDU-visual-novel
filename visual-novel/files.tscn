@@ -456,10 +456,12 @@ bus = &"SFX"
 [node name="UiSimpleSelect" type="AudioStreamPlayer" parent="." unique_id=1281984540]
 unique_name_in_owner = true
 stream = ExtResource("3_wtebb")
+bus = &"SFX"
 
 [node name="UiSimpleCancel" type="AudioStreamPlayer" parent="." unique_id=1470901265]
 unique_name_in_owner = true
 stream = ExtResource("4_8r1eg")
+bus = &"SFX"
 
 [connection signal="pressed" from="closeSaves" to="." method="_on_close_saves_pressed"]
 [connection signal="pressed" from="save1/Load1" to="." method="_on_load_1_pressed"]
