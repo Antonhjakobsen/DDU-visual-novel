@@ -5,11 +5,6 @@
 [ext_resource type="AudioStream" uid="uid://b8tu10cmaag2w" path="res://Sound/UI Simple Select.wav" id="3_glbon"]
 [ext_resource type="AudioStream" uid="uid://pwe446k5lv4f" path="res://Sound/UI Simple Cancel.wav" id="4_nlkkf"]
 [ext_resource type="Texture2D" uid="uid://bqlnqn20j25ua" path="res://backgrounds/SchoolFrontClose.png" id="5_0o4t1"]
-[ext_resource type="Texture2D" uid="uid://cxsf0cy1slhc6" path="res://sprites/Test character.png" id="5_dy7ct"]
-[ext_resource type="Texture2D" uid="uid://ihsv87g5rfis" path="res://sprites/SpriteHarb.png" id="6_0o4t1"]
-[ext_resource type="Texture2D" uid="uid://c1aitx60wt7kx" path="res://sprites/Sen2.png" id="7_dy7ct"]
-[ext_resource type="Texture2D" uid="uid://bpuktgqlq2dqk" path="res://sprites/KING1.png" id="8_j5v2v"]
-[ext_resource type="Texture2D" uid="uid://kapkjwuj8cwf" path="res://sprites/Q.png" id="9_iotk1"]
 
 [sub_resource type="Image" id="Image_06t4h"]
 data = {
@@ -1112,70 +1107,6 @@ offset_left = -0.184021
 texture = ExtResource("5_0o4t1")
 expand_mode = 1
 
-[node name="TextureRect4" type="TextureRect" parent="." unique_id=519662685]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.44200003
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 92.81598
-offset_top = 332.0
-offset_right = -357.0
-offset_bottom = -14.28479
-texture = ExtResource("5_dy7ct")
-expand_mode = 1
-
-[node name="TextureRect6" type="TextureRect" parent="." unique_id=886477353]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.44200003
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 363.81598
-offset_top = 315.0
-offset_right = -84.0
-offset_bottom = -15.558105
-texture = ExtResource("6_0o4t1")
-expand_mode = 1
-
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=683919707]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.44200003
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 170.81598
-offset_top = 273.0
-offset_right = -249.0
-offset_bottom = -11.976746
-texture = ExtResource("7_dy7ct")
-expand_mode = 1
-
-[node name="TextureRect3" type="TextureRect" parent="." unique_id=1559703826]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.44200003
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 258.81598
-offset_top = 282.0
-offset_right = -152.0
-offset_bottom = -0.123291016
-texture = ExtResource("8_j5v2v")
-expand_mode = 1
-
-[node name="TextureRect5" type="TextureRect" parent="." unique_id=555912331]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.44200003
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 416.81598
-offset_top = 276.0
-offset_bottom = -4.0930176
-texture = ExtResource("9_iotk1")
-expand_mode = 1
-
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1623877258]
 layout_mode = 1
 anchors_preset = -1
@@ -1196,8 +1127,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/normal_font_size = 24
-text = "*Insert game name here*"
+theme_override_font_sizes/normal_font_size = 48
+text = "OUR WORLD"
 horizontal_alignment = 1
 vertical_alignment = 1
 
