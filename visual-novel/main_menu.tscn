@@ -4,7 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://blurveuc3tee8" path="res://Sound/UI Simple Confirm.wav" id="2_jix8l"]
 [ext_resource type="AudioStream" uid="uid://b8tu10cmaag2w" path="res://Sound/UI Simple Select.wav" id="3_glbon"]
 [ext_resource type="AudioStream" uid="uid://pwe446k5lv4f" path="res://Sound/UI Simple Cancel.wav" id="4_nlkkf"]
-[ext_resource type="Texture2D" uid="uid://bqlnqn20j25ua" path="res://backgrounds/SchoolFrontClose.png" id="5_0o4t1"]
+[ext_resource type="Texture2D" uid="uid://cbx0nhkejcib1" path="res://backgrounds/bgMain.png" id="5_glbon"]
 
 [sub_resource type="Image" id="Image_06t4h"]
 data = {
@@ -1104,7 +1104,7 @@ anchor_left = 0.44200003
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -0.184021
-texture = ExtResource("5_0o4t1")
+texture = ExtResource("5_glbon")
 expand_mode = 1
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1623877258]
@@ -1128,7 +1128,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 48
-text = "OUR WORLD"
+text = "HELLO WORLD"
 horizontal_alignment = 1
 vertical_alignment = 1
 
